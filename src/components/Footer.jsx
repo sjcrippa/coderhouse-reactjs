@@ -1,12 +1,21 @@
 import React from 'react';
 
 import '../App.css';
-
+import { logo } from '../components/assets';
 const Footer = () => {
     return (
-        <div className='footer'>
-            Footer
-        </div>
+        <>
+            <footer>
+                <p className='text-center'>
+                    Developed by 
+                    <img 
+                    className='inline w-20 h-20 ml-5'
+                    src={logo} 
+                    alt="logo" />
+                </p>
+                
+            </footer>
+        </>
     )
 }
 
