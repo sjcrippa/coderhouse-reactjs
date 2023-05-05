@@ -14,7 +14,7 @@ const Counter = () => {
     return (
         <>
             <div className='container flex shrink justify-center mx-auto mt-5 mb-5 p-10'>
-                <div className='grid grid-cols-1 gap-3 bg-red-500 rounded-xl text-center w-96 p-3'>
+                <div className='grid grid-cols-1 gap-3 bg-red-500 rounded-xl text-center w-96 p-3 shadow-2xl'>
                     <p className='font-[Verdana] font-bold text-xl cursor-default'>Counter</p>
                     <div className='font-[Verdana] font-bold text-xl'>
                         {resultado}
