@@ -13,7 +13,9 @@ const CartWidget = () => {
                         className='w-8 h-8 hover:scale-110 duration-200'
                         src={cart}
                         alt="cart" />
-                <p className='text-center hover:text-white hover:scale-110 duration-200'>1</p>
+                <p className='text-center bg-red-500 rounded-full hover:text-white hover:scale-110 duration-200'>
+                    1
+                </p>
                 </a>
             </div>
         </>
