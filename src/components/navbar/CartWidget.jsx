@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+
 import { cart } from '../assets'
 
 const CartWidget = () => {
@@ -12,7 +13,7 @@ const CartWidget = () => {
                         className='w-8 h-8 hover:scale-110 duration-200'
                         src={cart}
                         alt="cart" />
-
+                <p className='text-center hover:text-white hover:scale-110 duration-200'>1</p>
                 </a>
             </div>
         </>

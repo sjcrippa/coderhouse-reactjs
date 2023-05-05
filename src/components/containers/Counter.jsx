@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Counter = () => {
-    
+
     const [resultado, setResultado] = useState(0);
 
     const sumar = () => {
@@ -19,18 +19,20 @@ const Counter = () => {
                     <div className='font-[Verdana] font-bold text-2xl'>
                         {resultado}
                     </div>
-                    <button
-                        onClick={sumar}
-                        className='mx-auto font-[Verdana] font-bold text-lg text-slate-900 font bg-red-300 rounded-xl w-20 hover:bg-slate-700 hover:text-white'
-                    >
-                        +1
-                    </button>
-                    <button
-                        onClick={restar}
-                        className='mx-auto font-[Verdana] font-bold text-lg text-slate-900 font bg-red-300 rounded-xl w-20 hover:bg-slate-700 hover:text-white'
-                    >
-                        -1
-                    </button>
+                    <div className='flex mb-3'>
+                        <button
+                            onClick={sumar}
+                            className='mx-auto font-[Verdana] font-bold text-lg text-slate-900 font bg-red-300 rounded-xl w-20 shadow-xl hover:bg-slate-700 hover:text-white'
+                        >
+                            +1
+                        </button>
+                        <button
+                            onClick={restar}
+                            className='mx-auto font-[Verdana] font-bold text-lg text-slate-900 font bg-red-300 rounded-xl w-20 shadow-xl hover:bg-slate-700 hover:text-white'
+                        >
+                            -1
+                        </button>
+                    </div>
                 </div>
             </div>
         </>
