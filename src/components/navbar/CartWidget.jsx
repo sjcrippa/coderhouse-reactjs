@@ -6,7 +6,7 @@ const CartWidget = () => {
 
     return (
         <>
-            <button className='text-center hover:text-white hover:scale-110 duration-200'>
+            <button className='text-center text-white hover:scale-125 duration-200'>
                 <img
                     className='w-8 h-8'
                     src={cart}
