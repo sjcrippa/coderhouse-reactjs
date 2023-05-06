@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 
 const Counter = () => {
 
@@ -6,10 +6,10 @@ const Counter = () => {
 
     const sumar = () => {
         setResultado(resultado + 1);
-    }
+    };
     const restar = () => {
         setResultado(resultado - 1);
-    }
+    };
 
     return (
         <>
