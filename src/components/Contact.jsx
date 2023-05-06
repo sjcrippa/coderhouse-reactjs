@@ -1,4 +1,5 @@
 import React from 'react'
+
 import ContactForm from './containers/ContactForm'
 
 const Contact = () => {
@@ -10,13 +11,13 @@ const Contact = () => {
                     <ContactForm />
                     <div className='grid grid-cols-2 mt-2 pt-2 text-slate-900'>
                         <button
-                            className='mx-auto bg-red-300 rounded-xl w-20 shadow-xl hover:bg-slate-700 hover:text-white'
+                            className='mx-auto font-[Verdana] font-bold text-lg text-slate-900 font bg-red-300 rounded-xl w-20 shadow-xl hover:bg-slate-700 hover:text-white'
                             type='submit'
                         >
                             Login
                         </button>
                         <button
-                            className='mx-auto bg-red-300 rounded-xl w-20 shadow-xl hover:bg-slate-700 hover:text-white'
+                            className='mx-auto font-[Verdana] font-bold text-lg text-slate-900 font bg-red-300 rounded-xl w-20 shadow-xl hover:bg-slate-700 hover:text-white'
                             type='reset'
                         >
                             Reset
