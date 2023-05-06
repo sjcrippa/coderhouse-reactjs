@@ -7,11 +7,13 @@ const Navbar = () => {
     return (
         <>
             <nav className='container mx-auto flex mx-full font-[Verdana] text-lg font-bold pt-2'>
-                <img
-                    className='w-16 h-16 transition ease-in-out hover:scale-110 duration-200 p-1'
-                    src={logo}
-                    alt="logo" 
-                />
+                <a href="/">
+                    <img
+                        className='w-16 h-16 transition ease-in-out hover:scale-110 duration-200 p-1'
+                        src={logo}
+                        alt="logo"
+                    />
+                </a>
                 <ul className='text-slate-300 flex mx-auto gap-5'>
                     <a
                         href="/"
