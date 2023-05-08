@@ -6,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: radial-gradient(circle, #051937, #123150, #234b68, #376780, #4e8397);
+    background-image:url(./components/assets/background-tres.svg);
+    background-size: cover
 }
 
 ;
