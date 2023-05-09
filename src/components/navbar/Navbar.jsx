@@ -14,20 +14,20 @@ const Navbar = () => {
                         alt="logo"
                     />
                 </a>
-                <ul className='text-slate-300 flex mx-auto gap-5'>
+                <ul className='text-white flex mx-auto gap-5'>
                     <a
                         href="/"
-                        className="hover:text-white hover:scale-110 duration-200">
+                        className="hover:scale-110 duration-200">
                         Home
                     </a>
                     <a
                         href="/"
-                        className="hover:text-white hover:scale-110 duration-200">
+                        className="hover:scale-110 duration-200">
                         Products
                     </a>
                     <a
                         href="/"
-                        className="hover:text-white hover:scale-110 duration-200">
+                        className="hover:scale-110 duration-200">
                         Contact
                     </a>
                 </ul>
