@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from './components/Header';
+import Navbar from './components/navbar/Navbar'
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
@@ -8,12 +8,12 @@ import './App.css'
 
 const App = () => {
 	return (
-		<div>
-			<Header />
+		<>
+			<Navbar />
 			<Main />
 			<Contact />
 			<Footer />
-		</div>
+		</>
 	)
 }
 
