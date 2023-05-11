@@ -14,7 +14,7 @@ const Navbar = () => {
                         alt="logo"
                     />
                 </a>
-                <ul className='text-white flex mx-auto gap-5'>
+                <ul className='text-white flex mx-auto gap-5 items-center'>
                     <a
                         href="/"
                         className="hover:scale-110 duration-200">
