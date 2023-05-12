@@ -8,7 +8,7 @@ import CartWidget from './CartWidget';
 const Navbar = () => {
     return (
         <>
-            <nav className=' flex flex-wrap items-center font-[Verdana] text-lg font-bold pt-2'>
+            <nav className=' flex flex-wrap items-center font-[Verdana] text-lg font-bold pt-2 p-4'>
                 <a href="/">
                     <img
                         className='w-16 h-16 transition ease-in-out hover:scale-110 duration-200 p-1'
@@ -16,14 +16,9 @@ const Navbar = () => {
                         alt="logo"
                     />
                 </a>
-                <div className=''>
-                    <NavItems />
-                </div>
-
-                <div className='flex mx-auto'>
-                    <CartWidget />
-                    <MenuHamb />
-                </div>
+                <NavItems />
+                <CartWidget />
+                <MenuHamb />
             </nav>
         </>
     )

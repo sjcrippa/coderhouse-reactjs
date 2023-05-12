@@ -11,7 +11,7 @@ const MenuHamb = () => {
     }
 
     return (
-        <div className='flex justify-items-end'>
+        <div className=''>
             <button
                 className='md:hidden'
                 onClick={handleNav}
