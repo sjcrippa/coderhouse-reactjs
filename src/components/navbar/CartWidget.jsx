@@ -6,12 +6,12 @@ const CartWidget = () => {
 
     return (
         <>
-            <button className='text-center text-white hover:scale-125 duration-200'>
+            <button className='text-center text-black hover:scale-110 duration-200 mt-2'>
                 <img
                     className='w-8 h-8'
                     src={cart}
                     alt="cart" />
-                    <div className='text-sm font-[Verdana]'>1</div>
+                    <div className='text-sm'>1</div>
             </button>
         </>
     )
