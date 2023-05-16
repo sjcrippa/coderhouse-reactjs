@@ -7,18 +7,13 @@ const NavItems = () => {
                 <ul className='text-black p-4 md:p-0 items-center flex gap-5'>
                     <a
                         href="/"
-                        className="py-2 pl-3 pr-4 md:p-0 hover:text-amber-500 transition-colors hover:scale-110 hover:border-2 hover:rounded-xl hover:p-2">
-                        Home
+                        className="py-2 pl-3 pr-4 md:p-0 text-base font-light hover:shadow-sm transition-colors hover:border-2 hover:rounded-xl hover:p-2">
+                        FRAGANCIAS
                     </a>
                     <a
                         href="/"
-                        className="py-2 pl-3 pr-4 md:p-0 hover:text-amber-500 transition-colors hover:scale-110 hover:border-2 hover:rounded-xl hover:p-2">
-                        Products
-                    </a>
-                    <a
-                        href="/"
-                        className="py-2 pl-3 pr-4 md:p-0 hover:text-amber-500 transition-colors hover:scale-110 hover:border-2 hover:rounded-xl hover:p-2">
-                        Contact
+                        className="py-2 pl-3 pr-4 md:p-0 text-base font-light hover:shadow-sm transition-colors hover:border-2 hover:rounded-xl hover:p-2">
+                        MODA & ACCESORIOS
                     </a>
                 </ul>
             </div>
