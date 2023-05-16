@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ItemListContainer from './containers/itemListContainer/ItemListContainer';
-import BrandTitle from './containers/BrandTitle';
+import BrandTitle from './containers/brand/BrandTitle';
 const Main = () => {
 
     return (
