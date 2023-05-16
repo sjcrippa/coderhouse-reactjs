@@ -12,7 +12,7 @@ const Navbar = () => {
                 <nav className='flex mx-auto items-center text-lg font-bold h-16 p-6 bg-white'>
                     <a href="/">
                         <img
-                            className='w-36 h-6'
+                            className='w-36'
                             src={pacoLogo}
                             alt="logo"
                         />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ItemListContainer from './containers/ItemListContainer';
+import ItemListContainer from './containers/itemListContainer/ItemListContainer';
 import BtnForCounter from './containers/BtnForCounter';
 const Main = () => {
 
