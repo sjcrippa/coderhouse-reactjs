@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <footer className='flex w-full wx-auto justify-center items-center mb-10'>
-                <p className='font-[Verdana] text-lg font-semibold cursor-default hover:text-slate-100 duration-200'>
+                <p className='text-lg font-semibold cursor-default hover:text-slate-100 duration-200'>
                     Developed by
                 </p>
                 <a href="/">

@@ -9,5 +9,5 @@ export {
     cart,
     menu,
     pacoLogo,
-    pacoDesktop
+    pacoDesktop,
 }
