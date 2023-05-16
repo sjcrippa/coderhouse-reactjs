@@ -4,15 +4,15 @@ import { pacoLogo } from '../assets';
 import MenuHamb from '../containers/MenuHamb';
 import NavItems from './NavItems';
 import CartWidget from './CartWidget';
-
+import '../../App.css'
 const Navbar = () => {
     return (
         <>
-            <div className='relative'>
+            <div className='navbar'>
                 <nav className='flex mx-auto items-center text-lg font-bold h-16 p-6 bg-white'>
                     <a href="/">
                         <img
-                            className='w-36 h-6 transition ease-in-out hover:scale-110 duration-200'
+                            className='w-36 h-6'
                             src={pacoLogo}
                             alt="logo"
                         />
