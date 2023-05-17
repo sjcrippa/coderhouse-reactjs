@@ -1,10 +1,9 @@
 import React from 'react';
 
-import Navbar from './components/navbar/Navbar'
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
 import './App.css'
+import Navbar from './components/containers/navbar/Navbar';
 
 const App = () => {
 	return (

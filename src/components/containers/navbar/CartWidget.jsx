@@ -1,6 +1,6 @@
 import React from 'react'
+import { cart } from '../../assets'
 
-import { cart } from '../assets'
 
 const CartWidget = () => {
 
