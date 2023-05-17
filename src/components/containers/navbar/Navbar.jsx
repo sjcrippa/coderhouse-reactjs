@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { pacoLogo } from '../../assets';
+import { pacoLogo } from '../../../assets';
 import CartWidget from './CartWidget';
 import NavItems from './NavItems';
 import '../../../App.css'

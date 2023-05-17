@@ -2,8 +2,8 @@ import React from 'react';
 
 import Main from './components/Main';
 import Footer from './components/Footer';
-import './App.css'
 import Navbar from './components/containers/navbar/Navbar';
+import './App.css'
 
 const App = () => {
 	return (
