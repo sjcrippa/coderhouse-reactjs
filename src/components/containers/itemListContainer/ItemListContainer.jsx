@@ -25,19 +25,24 @@ const ItemListContainer = () => {
                 Main container <br />
                 {
                     productos.length > 0 &&
-                    <div className='card flex mx-auto'>
-                        <div className='flex-row mx-auto items-center p-5 rounded-md shadow-lg shadow-black  bg-red-500'>
-                            <img
-                                className='mx-auto'
-                                src={productos[0].image}
-                                alt={productos[0].name}
-                            />
-                            <h2>{productos[0].name}</h2>
-                            <p>For {productos[0].gender}</p>
-                            <p>$ {productos[0].price}</p>
-                            <p>{productos[0].description}</p>
-                        </div>
-                    </div>
+
+                    productos.map((producto) => {
+                        return (
+                            <div className='card flex flex-grow mx-auto'>
+                                <div className='flex flex-col mx-auto items-center p-5 rounded-md shadow-lg shadow-black  bg-red-500'>
+                                    <img
+                                        className='mx-auto'
+                                        src={productos.image}
+                                        alt={productos.name}
+                                    />
+                                    <h2>{productos.name}</h2>
+                                    <p>For {productos.gender}</p>
+                                    <p>$ {productos.price}</p>
+                                    <p>{productos.description}</p>
+                                </div>
+                            </div>
+                        )
+                    })
                 }
                 <ItemList />
             </div>
