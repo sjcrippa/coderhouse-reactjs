@@ -5,7 +5,7 @@ import { logo } from '../assets';
 const Footer = () => {
     return (
         <>
-            <footer className='flex w-full wx-auto justify-center items-center mb-10'>
+            <footer className='mt-20 flex w-full wx-auto justify-center items-center mb-10'>
                 <p className='text-lg font-semibold cursor-default hover:text-slate-100 duration-200'>
                     Developed by
                 </p>
