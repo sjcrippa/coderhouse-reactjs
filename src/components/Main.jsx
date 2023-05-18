@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <>
             <BrandTitle />
-            <div className='mt-72'>
+            <div className='mt-48'>
                 <ItemListContainer />
             </div>
         </>

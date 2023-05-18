@@ -2,12 +2,20 @@ import React from 'react';
 
 import Item from './Item';
 
-const ItemList = () => {
+const ItemList = ({ productos }) => {
     return (
         <>
-            <div className='mt-10'>
-                Agrupador de un set de componentes
-                <Item />
+            <div>
+                <h1 className='text-center text-2xl'>Productos</h1>
+                {
+                    productos.length > 0 &&
+
+                    productos.map((producto) => {
+                        return (
+                            <Item key={producto.id} producto={producto} />
+                        )
+                    })
+                }
             </div>
         </>
     )
