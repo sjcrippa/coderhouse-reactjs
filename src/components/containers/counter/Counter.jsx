@@ -13,10 +13,8 @@ const Counter = ({ stock }) => {
     };
 
     return (
-
-
         <>
-            <div className='mt-10 flex justify-center items-center text-center'>
+            <div className='mt-3 flex justify-center items-center text-center'>
                 <div className='p-2 px-8 bg-red-500 rounded-lg shadow-lg shadow-black/60 flex gap-4'>
                     <button onClick={substract}>-</button>
                     <p>{items}</p>
@@ -25,7 +23,7 @@ const Counter = ({ stock }) => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Counter
+export default Counter;
