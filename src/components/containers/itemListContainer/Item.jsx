@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from '../counter/Counter';
 
 const Item = ({ producto }) => {
     return (
@@ -14,9 +15,7 @@ const Item = ({ producto }) => {
                     <p>For {producto.gender}</p>
                     <p>$ {producto.price}</p>
                     <p>{producto.description}</p>
-                    <button className='mt-5 p-2 px-10 text-center bg-red-500 rounded-xl'>
-                        Add to cart
-                    </button>
+                    <Counter />
                 </div>
             </div>
         </>
