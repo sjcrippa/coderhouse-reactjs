@@ -4,8 +4,8 @@ import Counter from '../counter/Counter';
 const Item = ({ producto }) => {
     return (
         <>
-            <div className='mt-10 card container mx-auto text-center px-36 xl:px-[30rem]'>
-                <div className='border-2 p-5'>
+            <div className='mt-10 text-center'>
+                <div className='border-2 border-black p-5 m-10 rounded-xl shadow-lg shadow-black'>
                     <img
                         className='mx-auto'
                         src={producto.image}
