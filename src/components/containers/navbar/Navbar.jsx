@@ -4,6 +4,7 @@ import { pacoLogo } from '../../../assets';
 import CartWidget from './CartWidget';
 import NavItems from './NavItems';
 import '../../../App.css'
+import BrandTitle from '../brand/BrandTitle';
 
 const Navbar = () => {
     return (
@@ -20,6 +21,7 @@ const Navbar = () => {
                     <NavItems />
                     <CartWidget />
                 </nav>
+                <BrandTitle />
             </div>
         </>
     )

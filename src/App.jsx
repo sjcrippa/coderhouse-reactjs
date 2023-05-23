@@ -8,8 +8,10 @@ import './App.css'
 const App = () => {
 	return (
 		<>
-			<div className='app'>
+			<div className='app h-[130vh]'>
 				<Navbar />
+			</div>
+			<div className='h-[120vh]'>
 				<Main />
 				<Footer />
 			</div>
