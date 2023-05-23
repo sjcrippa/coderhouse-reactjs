@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Counter = ({ stock }) => {
-    const [items, setItems] = useState(0);
+    const [items, setItems] = useState(1);
     const [itemStock, setItemStock] = useState(stock);
 
     const add = () => {
@@ -19,7 +19,7 @@ const Counter = ({ stock }) => {
                     <button onClick={substract}>-</button>
                     <p>{items}</p>
                     <button onClick={add}>+</button>
-                    <button className='font-serif pl-5'>Add to cart</button>
+                    <button className='font-sans font-semibold pl-5 hover:text-white hover:scale-110 duration-100'>Add to cart</button>
                 </div>
             </div>
         </>
