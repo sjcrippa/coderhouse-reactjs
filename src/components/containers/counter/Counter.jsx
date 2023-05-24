@@ -17,7 +17,7 @@ const Counter = ({ stock }) => {
     return (
         <>
             <div className='mt-3 flex justify-center'>
-                <div className='p-2 items-center px-8 md:-my-3 md:h-12 xl:px-8 flex gap-5 text-white'>
+                <div className='p-2 items-center px-8 md:-my-3 md:h-12 xl:px-8 flex gap-5 text-slate-900'>
                     <button onClick={substract}>-</button>
                     <p>{items}</p>
                     <button onClick={add}>+</button>
