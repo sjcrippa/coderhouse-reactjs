@@ -5,6 +5,7 @@ import CartWidget from './CartWidget';
 import NavItems from './NavItems';
 import '../../../App.css'
 import BrandTitle from '../brand/BrandTitle';
+import ItemListContainer from '../itemListContainer/ItemListContainer';
 
 const Navbar = () => {
     return (
@@ -23,6 +24,7 @@ const Navbar = () => {
                 </nav>
                 <BrandTitle />
             </div>
+            <ItemListContainer />
         </>
     )
 }

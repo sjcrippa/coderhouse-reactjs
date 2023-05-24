@@ -5,19 +5,21 @@ const Item = ({ producto }) => {
     return (
         <>
             <div className='text-center'>
-                <div className='border-2 border-slate-800 p-5 m-10 rounded-xl shadow-lg shadow-black h-80 bg-white hover:scale-105 duration-150 hover:shadow-2xl hover:shadow-black'>
+                <div className='m-5 rounded-xl shadow-lg bg-transparent shadow-black bg-white hover:scale-100 duration-150 hover:shadow-2xl hover:shadow-black h-80 xl:h-auto text-white'>
                     <img
-                        className='mx-auto'
+                        className='mx-auto rounded-xl'
                         src={producto.image}
                         alt={producto.name}
                     />
                     <div className='mt-3'>
-                        <h2>{producto.name}</h2>
-                        <p>For {producto.gender}</p>
-                        <p>$ {producto.price}</p>
-                        <p>{producto.description}</p>
-                    </div>
-                    <Counter />
+{/*                         <h2>{producto.name}</h2>
+ */}{/*                         <p>For {producto.gender}</p>
+ */}                        <p>$ {producto.price}</p>
+{/*                         <p>{producto.description}</p>
+ */}                    </div>
+                    
+                    <Counter stock={10}/>
+                
                 </div>
             </div>
         </>

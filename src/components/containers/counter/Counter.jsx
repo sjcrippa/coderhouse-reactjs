@@ -5,7 +5,9 @@ const Counter = ({ stock }) => {
     const [itemStock, setItemStock] = useState(stock);
 
     const add = () => {
-        setItems(items + 1)
+        if (items < itemStock) {
+            setItems(items + 1)
+        }
     };
 
     const substract = () => {
@@ -14,12 +16,12 @@ const Counter = ({ stock }) => {
 
     return (
         <>
-            <div className='mt-3 flex justify-center items-center text-center'>
-                <div className='p-2 items-center md:-my-3 md:h-12 xl:px-8 bg-red-500 rounded-lg shadow-lg shadow-black/60 flex gap-4'>
+            <div className='mt-3 flex justify-center'>
+                <div className='p-2 items-center px-8 md:-my-3 md:h-12 xl:px-8 flex gap-5 text-white'>
                     <button onClick={substract}>-</button>
                     <p>{items}</p>
                     <button onClick={add}>+</button>
-                    <button className=' font-sans font-semibold hover:text-white hover:scale-110 duration-100'>Add to cart</button>
+                    <button className='p-2 px-5 rounded-lg h-5 flex items-center text-sm font-sans font-semibold text-white bg-slate-800 hover:bg-white hover:text-slate-800 hover:font-bold hover:text-lg duration-150'>Add </button>
                 </div>
             </div>
         </>

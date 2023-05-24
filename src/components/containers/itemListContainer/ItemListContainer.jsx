@@ -11,11 +11,14 @@ const ItemListContainer = () => {
             .then((res) => {
                 setProductos(res)
             })
+            .catch((err) => {
+                // logic for catching the error goes here.
+            })
     }, [])
 
     return (
         <>
-            <div className='bg-amber-200'>
+            <div className='bg-slate-900'>
                 <ItemList productos={productos}/>
             </div>
         </>
