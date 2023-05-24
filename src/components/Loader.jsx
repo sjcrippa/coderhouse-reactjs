@@ -3,7 +3,11 @@ import React from 'react';
 const Loader = () => {
     return (
         <>
-            <div className='text-center text-6xl font-bold bg-indigo-700 text-white'>Loader</div>
+            <div className='container mx-auto'>
+                <div className='flex justify-center'>
+                    <p className='p-5 rounded-md bg-indigo-600 text-white text-6xl font-bold'>Loader</p>
+                </div>
+            </div>
         </>
     )
 }

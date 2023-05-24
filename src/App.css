@@ -1,6 +1,6 @@
 /* aca vamos a poner ciertos estilos para ciertos comps */
-.app{
+.navbar{
     background-image: url('./assets/pacoDesktop.jpg');
-    height: 120vh;
     background-size: cover;
+    height: 110vh;
 }

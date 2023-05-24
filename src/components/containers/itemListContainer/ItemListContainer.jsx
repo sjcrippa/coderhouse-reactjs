@@ -6,7 +6,11 @@ import Loader from '../../Loader';
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
-    const [showLoader, setShowLoader] = useState(false)
+    const [showLoader, setShowLoader] = useState(false);
+
+    const handleLoader = () => {
+        
+    }
 
     useEffect(() => {
         pedirProductos()

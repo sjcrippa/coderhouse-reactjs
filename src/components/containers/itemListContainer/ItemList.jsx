@@ -10,7 +10,6 @@ const ItemList = ({ productos }) => {
                 <div className='container mx-auto'>
                     <div className='grid mx-20 xl:mx-auto md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10'>
                         {
-                            productos.length > 0 &&
                             productos.map((producto) => {
                                 return (
                                     <Item key={producto.id} producto={producto} />
