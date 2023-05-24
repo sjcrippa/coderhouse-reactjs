@@ -10,8 +10,8 @@ import '../../../App.css'
 const Navbar = () => {
     return (
         <>
-            <div className='navbar'>
-                <nav className='flex items-center h-16 p-6 bg-white'>
+            <div className='navbar relative'>
+                <nav className='flex items-center h-16 p-6 bg-white w-screen'>
                     <a href="/">
                         <img
                             className='w-36 sm:min-w-36'
@@ -22,7 +22,9 @@ const Navbar = () => {
                     <NavItems />
                     <CartWidget />
                 </nav>
-                <BrandTitle />
+                <div className=''>
+                    <BrandTitle />
+                </div>
             </div>
             <ItemListContainer />
         </>

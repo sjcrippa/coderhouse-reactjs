@@ -5,7 +5,7 @@ import BrandBtns from './BrandBtns'
 const BrandTitle = () => {
     return (
         <>
-            <div className='flex flex-col mx-auto mt-9 text-center text-white cursor-default'>
+            <div className='flex flex-col mx-auto text-center text-white cursor-default'>
                 <h1 className='text-6xl md:text-8xl xl:text-[10rem]'>
                     paco rabanne
                 </h1>
