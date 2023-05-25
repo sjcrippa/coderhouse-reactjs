@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import pedirProductos from '../../../functions/pedirProductos';
 import Loader from '../../Loader';
+import Navbar from '../navbar/Navbar';
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
@@ -23,6 +24,7 @@ const ItemListContainer = () => {
     return (
         <>
             <div className='bg'>
+                <Navbar />
                 {!loader ? <Loader /> : <ItemList productos={productos}/>}
 
             </div>

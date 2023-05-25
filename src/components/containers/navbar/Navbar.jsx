@@ -3,9 +3,7 @@ import React from 'react';
 import { pacoLogo } from '../../../assets';
 import CartWidget from './CartWidget';
 import NavItems from './NavItems';
-import ItemListContainer from '../itemListContainer/ItemListContainer';
-import '../../../App.css'
-import BrandTitle from '../brand/BrandTitle';
+import Main from '../../Main';
 
 const Navbar = () => {
     return (
@@ -22,11 +20,7 @@ const Navbar = () => {
                     <NavItems />
                     <CartWidget />
                 </nav>
-                <div className='main'>
-                    <BrandTitle />
-                </div>
             </div>
-            <ItemListContainer />
         </>
     )
 }

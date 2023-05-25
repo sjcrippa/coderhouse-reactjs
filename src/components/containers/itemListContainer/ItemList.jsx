@@ -1,12 +1,16 @@
 import React from 'react';
 
 import Item from './Item';
+import { pacoLogo } from '../../../assets';
 
 const ItemList = ({ productos }) => {
     return (
         <>
             <div className='Parent'>
-                <h1 className='text-white text-center text-5xl'>Productos</h1>
+                <div className='container mx-auto'>
+{/*                     <img className='w-36 h-16' src={pacoLogo} alt="logo" />
+ */}                    <h1 className='text-indigo-600 text-center text-5xl'>Principales Fragancias</h1>
+                </div>
                 <div className='container mx-auto'>
                     <div className='grid mx-20 xl:mx-auto md:grid-cols-2 lg:grid-cols-3 gap-10'>
                         {
