@@ -22,7 +22,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <div className='bg-slate-900'>
+            <div className='bg'>
                 {!loader ? <Loader /> : <ItemList productos={productos}/>}
 
             </div>

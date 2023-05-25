@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import BrandBtns from './BrandBtns'
+import BrandBtns from './BrandBtns';
 
 const BrandTitle = () => {
     return (
@@ -18,4 +18,4 @@ const BrandTitle = () => {
     )
 }
 
-export default BrandTitle
+export default BrandTitle;

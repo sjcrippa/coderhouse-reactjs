@@ -5,7 +5,7 @@ const Loader = () => {
     return (
         <>
             <div className='container mx-auto'>
-                <div className='flex justify-center'>
+                <div className='flex justify-center my-20'>
                     <p className='p-5 rounded-md bg-indigo-600 text-white text-6xl font-bold'>
                         Loading...
                     </p>

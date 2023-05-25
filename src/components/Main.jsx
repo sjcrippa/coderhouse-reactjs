@@ -6,7 +6,7 @@ const Main = () => {
 
     return (
         <>
-            <div className=''>
+            <div>
                 <ItemListContainer />
             </div>
         </>

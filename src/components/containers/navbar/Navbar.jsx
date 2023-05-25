@@ -3,14 +3,14 @@ import React from 'react';
 import { pacoLogo } from '../../../assets';
 import CartWidget from './CartWidget';
 import NavItems from './NavItems';
-import BrandTitle from '../brand/BrandTitle';
 import ItemListContainer from '../itemListContainer/ItemListContainer';
 import '../../../App.css'
+import BrandTitle from '../brand/BrandTitle';
 
 const Navbar = () => {
     return (
         <>
-            <div className='navbar relative'>
+            <div className='relative'>
                 <nav className='flex items-center h-16 p-6 bg-white w-screen'>
                     <a href="/">
                         <img
@@ -22,7 +22,7 @@ const Navbar = () => {
                     <NavItems />
                     <CartWidget />
                 </nav>
-                <div className=''>
+                <div className='main'>
                     <BrandTitle />
                 </div>
             </div>
