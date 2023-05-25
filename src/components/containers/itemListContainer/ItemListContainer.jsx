@@ -6,27 +6,25 @@ import Loader from '../../Loader';
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
-    const [showLoader, setShowLoader] = useState(false);
-
-    const handleLoader = () => {
-        
-    }
+    const [loader, setLoader] = useState(false);
 
     useEffect(() => {
         pedirProductos()
             .then((res) => {
                 setProductos(res)
+                setLoader(true)
             })
             .catch((err) => {
                 // logic for catching the error goes here.
             })
     }, [])
 
+
     return (
         <>
-            <Loader />
             <div className='bg-slate-900'>
-                <ItemList productos={productos}/>
+                {!loader ? <Loader /> : <ItemList productos={productos}/>}
+
             </div>
         </>
     );
