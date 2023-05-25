@@ -2,13 +2,14 @@ import React from 'react'
 
 import Navbar from './containers/navbar/Navbar'
 import Main from './Main'
+import ItemListContainer from './containers/itemListContainer/ItemListContainer'
 
 const Header = () => {
     return (
         <>
             <div>
-                <Navbar />
                 <Main />
+                <ItemListContainer />
             </div>
         </>
     )
