@@ -4,15 +4,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import ItemListContainer from './components/containers/itemListContainer/ItemListContainer';
 import Error from './components/Error';
-import './App.css'
 import Header from './components/Header';
 import Navbar from './components/containers/navbar/Navbar';
 import ItemDetailContainer from './components/containers/itemDetail/ItemDetailContainer';
+import './App.css';
 
 const App = () => {
 	return (
 		<>
-			<div className='bg-slate-950'>
+			<div className='app bg-black/90'>
 				<BrowserRouter>
 				<Navbar />
 					<Routes>

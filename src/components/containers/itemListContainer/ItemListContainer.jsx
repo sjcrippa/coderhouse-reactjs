@@ -15,16 +15,14 @@ const ItemListContainer = () => {
                 setLoader(true)
             })
             .catch((err) => {
-                // logic for catching the error goes here.
+                console.log(err);
             })
-    }, [])
-
+    }, []);
 
     return (
         <>
-            <div className='mt-5 bg-slate-950'>
+            <div className='mt-5'>
                 {!loader ? <Loader /> : <ItemList productos={productos}/>}
-
             </div>
         </>
     );

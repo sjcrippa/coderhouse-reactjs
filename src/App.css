@@ -1,6 +1,10 @@
 /* aca vamos a poner ciertos estilos para ciertos comps */
-.main{
+.main {
     background-image: url('./assets/pacoDesktop.jpg');
-    background-size:cover;
+    background-size: cover;
     height: 100vh;
 }
+/* 
+.app {
+    background-image: radial-gradient(circle, #6441a5, #56328b, #472473, #39165b, #2a0845);
+} */
