@@ -1,20 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
+import { pedirProdsPorId } from '../../../functions/pedirProdsPorId';
 import ItemDetail from './ItemDetail';
 
-const ItemDetailContainer = () => {
-/*     const [item, setItem] = useState(null);
+const ItemDetailContainer = ({ itemId }) => {
+    const [item, setItem] = useState(null);
 
     useEffect(() => {
-        
-        return () => {
-            second
-        }
-    }, [third]) */
+        pedirProdsPorId(itemId)
+            .then((res) => {
+                setItem(res)
+            })
+    }, [])
 
     return (
         <div>
-            <ItemDetail />
+            {item && <ItemDetail item={item} />}
         </div>
     )
 }

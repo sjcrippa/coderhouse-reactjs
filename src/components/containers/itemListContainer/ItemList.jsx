@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Item from './Item';
-import { pacoLogo } from '../../../assets';
 
 const ItemList = ({ productos }) => {
     return (

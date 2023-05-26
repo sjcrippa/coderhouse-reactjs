@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-import Item from '../itemListContainer/Item'
-
-const ItemDetail = ( {producto} ) => {
+const ItemDetail = ({ item }) => {
     return (
         <>
-            <div>
-                <Item producto={producto.id} />
+            <div className='container'>
+                <div className='producto-detalle'>
+                    <img src={item.image} alt="" />
+                    <div>
+                        <h3>{item.name}</h3>
+                        <p>${item.price}</p>
+                    </div>
+                </div>
             </div>
         </>
     )
