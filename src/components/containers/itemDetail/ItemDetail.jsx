@@ -1,14 +1,18 @@
 import React from 'react';
 
+import Counter from '../counter/Counter'
 const ItemDetail = ({ item }) => {
     return (
         <>
-            <div className='container'>
-                <div className='producto-detalle'>
-                    <img src={item.image} alt="" />
-                    <div>
+            <div className='container mx-auto'>
+                <div className='mt-5 flex'>
+                    <img className='w-1/2 xl:w-1/4 rounded-xl' src={item.image} alt="prod img" />
+                    <div className='m-5 text-white rounded-xl bg-indigo-600 p-5 h-1/2'>
                         <h3>{item.name}</h3>
-                        <p>${item.price}</p>
+                        <p>$ {item.price}</p>
+                        <p>For {item.gender}</p>
+                        <p>{item.description}</p>
+                        <Counter />
                     </div>
                 </div>
             </div>

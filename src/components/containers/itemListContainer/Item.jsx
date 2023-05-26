@@ -8,7 +8,7 @@ const Item = ({ producto }) => {
         <>
             <div className='text-center'>
                 <div className='m-16 md:m-7 rounded-xl shadow-lg bg-transparent shadow-black bg-white hover:scale-100 duration-150 hover:shadow-2xl hover:shadow-black/60 xl:h-auto text-slate-900'>
-                    <Link to={"/item/:id"}>
+                    <Link to={`/item/${producto.id}`}>
                         <img
                             className='mx-auto rounded-t-xl'
                             src={producto.image}

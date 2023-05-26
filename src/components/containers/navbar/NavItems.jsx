@@ -12,9 +12,9 @@ const NavItems = () => {
                         FRAGANCIAS
                     </Link>
                     <Link
-                        to={"/footer"}
+                        to={"/:category"}
                         className="py-2 pl-3 pr-4 md:p-0 text-sm md:text-base font-extralight hover:shadow-sm transition-colors">
-                        MODA & ACCESORIOS
+                        CATEGORIAS
                     </Link>
                 </ul>
             </div>

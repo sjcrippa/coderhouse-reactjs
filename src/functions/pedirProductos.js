@@ -4,8 +4,8 @@ const pedirProductos = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() =>{
             resolve(data)
-        },2000)
+        },1000)
     });
 };
 
-export default pedirProductos
+export default pedirProductos;
