@@ -1,6 +1,6 @@
 /* aca vamos a poner ciertos estilos para ciertos comps */
 .main{
     background-image: url('./assets/pacoDesktop.jpg');
-    background-size: cover;
+    background-size:cover;
     height: 110vh;
 }

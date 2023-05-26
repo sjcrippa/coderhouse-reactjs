@@ -7,17 +7,18 @@ import Error from './components/Error';
 import './App.css'
 import Header from './components/Header';
 import Navbar from './components/containers/navbar/Navbar';
+import ItemDetailContainer from './components/containers/itemDetail/ItemDetailContainer';
 
 const App = () => {
 	return (
 		<>
-			<div>
+			<div className='bg-slate-950'>
 				<BrowserRouter>
 				<Navbar />
 					<Routes>
 						<Route path={'/'} element={<Header />} />
 						<Route path={'/productos'} element={<ItemListContainer />} />
-						<Route path={'/productos/category:id'} element={<ItemListContainer />} />
+						<Route path={'/productos/category:id'} element={<ItemDetailContainer />} />
 						<Route path={'/footer'} element={<Footer />} />
 						<Route path={'/*'} element={<Error />} />
 					</Routes>
