@@ -12,12 +12,13 @@ import './App.css';
 const App = () => {
 	return (
 		<>
-			<div className='app bg-black/90'>
+			<div className='app bg-indigo-900'>
 				<BrowserRouter>
 				<Navbar />
 					<Routes>
 						<Route path={'/'} element={<Header />} />
 						<Route path={'/productos'} element={<ItemListContainer />} />
+						<Route path={'/productos/:category'} element={<ItemListContainer />} />
 						<Route path={'/item/:id'} element={<ItemDetailContainer />} />
 						<Route path={'/*'} element={<Error />} />
 					</Routes>

@@ -3,7 +3,7 @@
         "id":1,
         "name":"Muffin Hinge",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h94/hfb/9469052846110/9469052780574/9469052780574.jpg",
-        "gender":"Female",
+        "category":"him",
         "price":11891,
         "description":"Maecenas pulvinar lobortis est."
     },
@@ -11,7 +11,7 @@
         "id":2,
         "name":"Water - Perrier",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h30/h37/9473140850718/9473140785182/9473140785182.jpg",
-        "gender":"Male",
+        "category":"him",
         "price":10378,
         "description":"Nam congue, risus."
     },
@@ -19,7 +19,7 @@
         "id":3,
         "name":"Cinnamon Rolls",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h20/h8d/9472012189726/9472012124190/9472012124190.jpg",
-        "gender":"Female",
+        "category":"her",
         "price":22519,
         "description":"Vestibulum ac est."
     },
@@ -27,7 +27,7 @@
         "id":4,
         "name":"Cheese - Le Cru Du Clocher",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hdf/h22/9548894797854/9548894732318/9548894732318.jpg",
-        "gender":"Female",
+        "category":"him",
         "price":13068,
         "description":"Curabitur gravida nisi."
     },
@@ -35,7 +35,7 @@
         "id":5,
         "name":"Peas - Pigeon, Dry",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hde/h51/9550137983006/9550137950238/9550137950238.jpg",
-        "gender":"Agender",
+        "category":"him",
         "price":36910,
         "description":"Donec diam neque."
     },
@@ -43,7 +43,7 @@
         "id":6,
         "name":"Wine - Zinfandel California 2002",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hc6/h30/9550144339998/9550144307230/9550144307230.jpg",
-        "gender":"Male",
+        "category":"her",
         "price":25798,
         "description":"Quisque ut erat."
     },
@@ -51,7 +51,7 @@
         "id":7,
         "name":"Chick Peas - Canned",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hf1/h34/9469067329566/9469067264030/9469067264030.jpg",
-        "gender":"Female",
+        "category":"him",
         "price":43075,
         "description":"Lorem ipsum dolor."
     },
@@ -59,7 +59,7 @@
         "id":8,
         "name":"Sour Puss Sour Apple",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hbd/h72/9564073984030/9564073918494/9564073918494.jpg",
-        "gender":"Female",
+        "category":"her",
         "price":20124,
         "description":"Ut tellus."
     },
@@ -67,7 +67,7 @@
         "id":9,
         "name":"Flour - Bread",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h52/haa/9548889325598/9548889260062/9548889260062.jpg",
-        "gender":"Female",
+        "category":"her",
         "price":17057,
         "description":"Phasellus sit amet erat."
     },
@@ -75,7 +75,7 @@
         "id":10,
         "name":"Tart Shells - Savory, 3",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h39/h92/9551990620190/9551990554654/9551990554654.jpg",
-        "gender":"Female",
+        "category":"her",
         "price":14788,
         "description":"Curabitur convallis."
     },
@@ -83,7 +83,7 @@
         "id":11,
         "name":"Tilapia - Fillets",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hf9/hda/9584233283614/9584233218078/9584233218078.jpg",
-        "gender":"Male",
+        "category":"her",
         "price":31201,
         "description":"Maecenas ut massa."
     },
@@ -91,7 +91,7 @@
         "id":12,
         "name":"Mikes Hard Lemonade",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h5d/he1/9587971325982/9587971260446/9587971260446.jpg",
-        "gender":"Genderfluid",
+        "category":"him",
         "price":48517,
         "description":"Donec dapibus."
     },
@@ -99,7 +99,7 @@
         "id":13,
         "name":"Nut - Walnut, Chopped",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hd4/hcf/9587976372254/9587976306718/9587976306718.jpg",
-        "gender":"Male",
+        "category":"him",
         "price":22904,
         "description":"Duis aliquam."
     },
@@ -107,7 +107,7 @@
         "id":14,
         "name":"Cookies - Fortune",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/ha0/h24/9551988129822/9551988064286/9551988064286.jpg",
-        "gender":"Female",
+        "category":"him",
         "price":18617,
         "description":"Sed sagittis."
     },
@@ -115,7 +115,7 @@
         "id":15,
         "name":"Pineapple - Canned, Rings",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hd6/h63/9587966476318/9587966410782/9587966410782.jpg",
-        "gender":"Female",
+        "category":"him",
         "price":40444,
         "description":"Praesent lectus."
     }

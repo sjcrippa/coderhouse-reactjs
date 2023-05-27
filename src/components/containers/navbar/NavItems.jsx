@@ -8,13 +8,18 @@ const NavItems = () => {
                 <ul className='text-black p-4 md:p-0 items-center flex gap-5'>
                     <Link
                         to={"/productos"}
-                        className="py-2 pl-3 pr-4 md:p-0 text-sm md:text-base font-extralight hover:shadow-sm transition-colors">
+                        className="py-2 pl-3 pr-4 md:p-0 text-sm md:text-base font-extralight transition-colors">
                         FRAGANCIAS
                     </Link>
                     <Link
-                        to={"/:category"}
-                        className="py-2 pl-3 pr-4 md:p-0 text-sm md:text-base font-extralight hover:shadow-sm transition-colors">
-                        CATEGORIAS
+                        to={"/productos/her"}
+                        className="py-2 pl-3 pr-4 md:p-0 text-sm md:text-base font-extralight transition-colors">
+                        FOR HER
+                    </Link>
+                    <Link
+                        to={"/productos/him"}
+                        className="py-2 pl-3 pr-4 md:p-0 text-sm md:text-base font-extralight transition-colors">
+                        FOR HIM
                     </Link>
                 </ul>
             </div>
