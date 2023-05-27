@@ -1,4 +1,9 @@
 /* aca vamos a poner ciertos estilos para ciertos comps */
+body{
+    --tw-bg-opacity: 1;
+    background-color: rgb(54 47 120 / var(--tw-bg-opacity))
+}
+
 .main {
     background-image: url('./assets/pacoDesktop.jpg');
     background-size: cover;

@@ -19,7 +19,7 @@ const Counter = ({ stock }) => {
                     <button className='hover:text-white' onClick={substract}>-</button>
                     <p className='cursor-default'>{items}</p>
                     <button className='hover:text-white' onClick={add}>+</button>
-                    <button className='p-1 px-5 rounded-lg flex items-center text-sm font-sans font-semibold text-white bg-indigo-800 hover:bg-white hover:text-indigo-950 hover:font-bold shadow-lg shadow-black/60 duration-150'>Add to Cart</button>
+                    <button className='p-1 px-5 rounded-lg flex items-center text-sm font-sans font-semibold text-white bg-indigo-800 hover:bg-white hover:text-indigo-950 shadow-lg shadow-black/60 duration-150'>Add to Cart</button>
                 </div>
             </div>
         </>

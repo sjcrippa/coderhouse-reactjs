@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            <footer className='mt-8 flex flex-col w-full mx-auto'>
+            <footer className='mt-8 mb-3 flex flex-col w-full mx-auto'>
                 <div className='flex text-white'>
                     <Link to={'/'}>
                         <img className='w-32 ml-5 bg-white p-2 rounded-lg' src={pacoLogo} alt="logo" />
