@@ -1,4 +1,4 @@
-import logo from './logo.png';
+import logosjc from './logosjc.png';
 import cart from './cart.svg';
 import menu from './menu.svg';
 import pacoLogo from './pacoLogo.png';
@@ -11,7 +11,7 @@ import linkedin from './linkedin.svg';
 import twitter from './twitter.svg';
 
 export {
-    logo,
+    logosjc,
     cart,
     menu,
     pacoLogo,

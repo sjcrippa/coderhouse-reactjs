@@ -11,7 +11,7 @@ const ItemDetail = ({ item }) => {
                         <img className='p-1 rounded-t-xl' src={item.image} alt="prod-img" />
                         <div className='p-1 mt-1 text-sm lg:text-base text-center font-serif font-semibold'>
                             <h3 className='uppercase text-lg'>{item.name}</h3>
-                            <p className='mt-3 text-start ml-2'>$ {item.price}</p>
+                            <p className='mt-2 text-start ml-2'>$ {item.price}</p>
                             <p className='text-start ml-2'>For {item.category}</p>
                             <p className='text-start ml-2'>{item.description}</p>
                         </div>

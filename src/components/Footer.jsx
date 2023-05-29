@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../App.css';
-import { github, linkedin, logo, logoDos, twitter } from '../assets';
+import { github, linkedin, logosjc, logoDos, twitter } from '../assets';
 
 const Footer = () => {
     return (
@@ -24,8 +24,8 @@ const Footer = () => {
                     </p>
                     <a href="https://github.com/sjcrippa" target='_blank'>
                         <img
-                    className='inline w-20 h-20 ml-5 hover:scale-110 duration-200'
-                    src={logo}
+                    className='inline h-24 ml-5 hover:scale-110 duration-200'
+                    src={logosjc}
                     alt="logo" />
                     </a>
                 </div>
