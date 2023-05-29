@@ -8,10 +8,10 @@ const ItemList = ({ productos, title }) => {
         <>
             <div className='Parent'>
                 <div className='container mx-auto'>
-                    <h1 className='text-white text-center text-2xl'>{toCapital(title)}</h1>
+                    <h1 className='text-black text-center text-2xl'>{toCapital(title)}</h1>
                 </div>
                 <div className='container mx-auto'>
-                    <div className='grid mx-20 md:mx-14 xl:mx-20 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+                    <div className='grid mx-16 md:mx-14 xl:mx-20 md:grid-cols-2 lg:grid-cols-3 gap-1'>
                         {
                             productos.map((producto) => {
                                 return (

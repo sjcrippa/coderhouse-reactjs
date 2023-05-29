@@ -18,7 +18,7 @@ const ItemDetailContainer = ({ itemId }) => {
     }, [id])
 
     return (
-        <div>
+        <div className='item-detail '>
             {item && <ItemDetail item={item} />}
         </div>
     )

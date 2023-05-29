@@ -1,25 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../App.css';
-import { logo, pacoLogo } from '../assets';
-import NavItems from './containers/navbar/NavItems';
-import { Link } from 'react-router-dom';
+import { github, linkedin, logo, logoDos, twitter } from '../assets';
+
 const Footer = () => {
     return (
         <>
-            <footer className='mt-8 mb-3 flex flex-col w-full mx-auto'>
-                <div className='flex text-white'>
+            <footer className='mt-10 mb-3 flex flex-col w-full mx-auto'>
+                <div className='flex'>
                     <Link to={'/'}>
-                        <img className='w-32 ml-5 bg-white p-2 rounded-lg' src={pacoLogo} alt="logo" />
+                        <img className='w-32 p-2 rounded-lg' src={logoDos} alt="logo" />
                     </Link>
                     <ul className='flex mx-auto items-center gap-5'>
-                        <li>Github</li>
-                        <li>Linkedin</li>
-                        <li>Instagram</li>
+                        <li><img src={github} alt="github" /><Link to="/"></Link></li>
+                        <li><img src={twitter} alt="twitter" /><Link to="/"></Link></li>
+                        <li><img src={linkedin} alt="linkedin" /><Link to="/"></Link></li>
                     </ul>
                 </div>
-                <div className='flex justify-center items-center mt-5'>
-                    <p className='text-lg font-semibold cursor-default text-white font-serif'>
+                <div className='flex justify-center items-center'>
+                    <p className='text-lg font-semibold cursor-default font-serif'>
                     Developed by
                     </p>
                     <a href="https://github.com/sjcrippa" target='_blank'>

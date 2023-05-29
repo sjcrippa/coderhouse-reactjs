@@ -1,15 +1,14 @@
 /* aca vamos a poner ciertos estilos para ciertos comps */
-body{
-    --tw-bg-opacity: 1;
-    background-color: rgb(54 47 120 / var(--tw-bg-opacity))
-}
-
 .main {
     background-image: url('./assets/pacoDesktop.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
 }
-/* 
-.app {
-    background-image: radial-gradient(circle, #6441a5, #56328b, #472473, #39165b, #2a0845);
-} */
+
+.item-detail{
+    background-image: url('./assets/bgdetail.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}

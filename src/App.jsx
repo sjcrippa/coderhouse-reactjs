@@ -12,7 +12,7 @@ import './App.css';
 const App = () => {
 	return (
 		<>
-			<div className='app bg-indigo-900'>
+			<div>
 				<BrowserRouter>
 				<Navbar />
 					<Routes>

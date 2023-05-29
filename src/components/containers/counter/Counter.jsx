@@ -5,7 +5,7 @@ const Counter = ({ stock }) => {
     const [itemStock, setItemStock] = useState(stock);
 
     const add = () => {
-        setItems (items + 1)
+        setItems(items + 1)
     };
 
     const substract = () => {
@@ -15,11 +15,13 @@ const Counter = ({ stock }) => {
     return (
         <>
             <div className='mt-3 flex justify-center'>
-                <div className='p-2 items-center md:-my-3 md:h-12 xl:px-8 flex gap-5 text-slate-900'>
-                    <button className='hover:text-white' onClick={substract}>-</button>
-                    <p className='cursor-default'>{items}</p>
-                    <button className='hover:text-white' onClick={add}>+</button>
-                    <button className='p-1 px-5 rounded-lg flex items-center text-sm font-sans font-semibold text-white bg-indigo-800 hover:bg-white hover:text-indigo-950 shadow-lg shadow-black/60 duration-150'>Add to Cart</button>
+                <div className='p-2 items-center md:-my-3 md:h-12 xl:px-8 flex flex-col gap-5 text-slate-900'>
+                    <div className='flex gap-5 text-lg'>
+                        <button className='font-semibold hover:scale-150 duration-100' onClick={substract}>-</button>
+                        <p className='cursor-default'>{items}</p>
+                        <button className='font-semibold hover:scale-150 duration-100' onClick={add}>+</button>
+                    </div>
+                    <button className='p-1 px-5 rounded-lg flex items-center text-sm font-sans font-semibold text-white bg-indigo-800 hover:bg-indigo-600 shadow-lg shadow-black/60 duration-150'>Add to Cart</button>
                 </div>
             </div>
         </>

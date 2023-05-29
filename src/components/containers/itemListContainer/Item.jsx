@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import ViewMore from '../buttons/ViewMore';
-
 const Item = ({ producto }) => {
     return (
         <>
             <div className='text-center'>
-                <div className='m-16 md:m-7 rounded-xl shadow-lg shadow-black duration-150 hover:shadow-2xl hover:shadow-black xl:h-auto text-slate-900 bg-white'>
+                <div className='m-12 md:m-7 rounded-xl shadow-lg shadow-black duration-150 hover:shadow-2xl hover:shadow-black xl:h-auto text-slate-900 bg-white'>
                     <Link to={`/item/${producto.id}`}>
                         <img
                             className='mx-auto rounded-t-xl'
@@ -15,7 +13,7 @@ const Item = ({ producto }) => {
                             alt={producto.name}
                         />
                     </Link>
-                    <ViewMore producto={producto}/>
+                    <p className='p-2 uppercase text-start ml-2'>{producto.name}</p>
                 </div>
             </div>
         </>
