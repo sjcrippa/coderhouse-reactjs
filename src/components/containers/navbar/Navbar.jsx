@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                     <div
                         onClick={handleMenu}
-                        className='p-1 flex justify-end items-end content-end text-black md:hidden'>
+                        className='p-1 flex mx-auto text-black md:hidden'>
                         {!menu 
                             ?
                             <button className=''>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                 </nav>
 
-                <nav className={!menu ? 'fixed left-0 top-18 w-[40%] bg-white h-full ease-in-out duration-500' : 'fixed left-[-100%]'} >
+                <nav className={!menu ? 'fixed left-0 top-0 w-[40%] bg-white h-full ease-in-out duration-500' : 'fixed left-[-100%]'} >
                     <ul className='uppercase flex flex-col'>
                         <Link
                             to={"/productos/him"}
