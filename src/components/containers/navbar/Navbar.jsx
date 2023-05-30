@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <>
             <div className='relative'>
-                <nav className='flex items-center h-16 p-6 bg-white w-full hidden'>
+                <nav className='flex items-center h-16 p-6 bg-white w-full'>
                     <a href="/">
                         <img
                             className='w-36 sm:min-w-36'
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <AiOutlineMenu size={25} />
                     </button>
                 </nav>
-                <nav className='flex items-center h-16 p-6 bg-black text-white w-full'>
+{/*                 <nav className='flex items-center h-16 p-6 bg-black text-white w-full'>
                     <a href="/">
                         <img
                             className='w-36 sm:min-w-36'
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <button>
                         <AiOutlineMenu size={25} />
                     </button>
-                </nav>
+                </nav> */}
             </div>
         </>
     )
