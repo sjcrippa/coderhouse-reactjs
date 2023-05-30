@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import CartWidget from './CartWidget'
 
 const NavItems = () => {
     return (
         <>
-            <div className='flex mx-auto'>
+            <div className='hidden md:flex mx-auto'>
                 <ul className='text-black p-4 md:p-0 items-center flex gap-5'>
                     <Link
                         to={"/productos"}

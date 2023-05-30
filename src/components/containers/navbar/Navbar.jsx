@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {AiOutlineMenu} from 'react-icons/ai'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineClose } from 'react-icons/ai'
 
 import { pacoLogo } from '../../../assets';
 import CartWidget from './CartWidget';
 import NavItems from './NavItems';
 
 const Navbar = () => {
+    const [menu, setMenu] = useState(false);
+
+    const handleMenu = () => {
+        setMenu(!menu)
+    }
+
     return (
         <>
-            <div className='relative'>
+            <div className=''>
                 <nav className='flex items-center h-16 p-6 bg-white w-full'>
                     <Link to={"/"}>
                         <img
@@ -19,25 +26,43 @@ const Navbar = () => {
                         />
                     </Link>
                     <NavItems />
-                    <CartWidget />
-                    <button>
-                        <AiOutlineMenu size={25} />
-                    </button>
+                    <div className='hidden md:flex'>
+                        <CartWidget />
+                    </div>
+                    <div
+                        onClick={handleMenu}
+                        className='p-1 flex justify-end items-end content-end text-black md:hidden'>
+                        {!menu 
+                            ?
+                            <button className=''>
+                                <AiOutlineClose size={30} />
+                            </button>
+                            :
+                            <button className=''>
+                                <AiOutlineMenu size={30} />
+                            </button>
+                        }
+                    </div>
                 </nav>
-{/*                 <nav className='flex items-center h-16 p-6 bg-black text-white w-full'>
-                    <a href="/">
-                        <img
-                            className='w-36 sm:min-w-36'
-                            src={pacoLogo}
-                            alt="logo"
-                        />
-                    </a>
-                    <NavItems />
-                    <CartWidget />
-                    <button>
-                        <AiOutlineMenu size={25} />
-                    </button>
-                </nav> */}
+
+                <nav className={!menu ? 'fixed left-0 top-18 w-[40%] bg-white h-full ease-in-out duration-500' : 'fixed left-[-100%]'} >
+                    <ul className='uppercase flex flex-col'>
+                        <Link
+                            to={"/productos/him"}
+                            className="p-4 pl-4 md:p-0 text-md md:text-base font-extralight">
+                            FOR HIM
+                        </Link>
+                        <Link
+                            to={"/productos/her"}
+                            className="p-4 pl-4 md:p-0 text-md md:text-base font-extralight">
+                            FOR HER
+                        </Link>
+                    </ul>
+                    <div className='p-4 -mt-3'>
+                        <CartWidget />
+                    </div>
+                </nav>
+
             </div>
         </>
     )
