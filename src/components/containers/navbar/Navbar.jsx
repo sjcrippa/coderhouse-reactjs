@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div
                         onClick={handleMenu}
                         className='p-1 flex mx-auto text-black md:hidden'>
-                        {!menu 
+                        {!menu
                             ?
                             <button className=''>
                                 <AiOutlineClose size={30} />
@@ -49,13 +49,18 @@ const Navbar = () => {
                     <ul className='uppercase flex flex-col'>
                         <Link
                             to={"/productos/him"}
-                            className="p-4 pl-4 md:p-0 text-md md:text-base font-extralight">
+                            className="p-4 pl-4 w-1/2 hover:text-white hover:bg-slate-900 duration-200 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
                             FOR HIM
                         </Link>
                         <Link
                             to={"/productos/her"}
-                            className="p-4 pl-4 md:p-0 text-md md:text-base font-extralight">
+                            className="p-4 pl-4 w-1/2 hover:text-white hover:bg-slate-900 duration-200 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
                             FOR HER
+                        </Link>
+                        <Link
+                            to={"/productos"}
+                            className="p-4 pl-4 w-1/2 hover:text-white hover:bg-slate-900 duration-200 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
+                            ALL
                         </Link>
                     </ul>
                     <div className='p-4 -mt-3'>

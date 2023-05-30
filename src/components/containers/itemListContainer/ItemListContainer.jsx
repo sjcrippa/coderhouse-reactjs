@@ -19,7 +19,7 @@ const ItemListContainer = () => {
                     setTitle(category)
                 } else {
                     setProductos(res)
-                    setTitle('FRAGANCIAS PRINCIPALES')
+                    setTitle('MAIN FRAGRANCES')
                 }
                 setLoader(true)
             })
