@@ -5,7 +5,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h94/hfb/9469052846110/9469052780574/9469052780574.jpg",
         "category":"him",
         "price":11891,
-        "description":"Maecenas pulvinar lobortis est."
+        "description":"Maecenas pulvinar lobortis est.",
+        "stock": 10
     },
     {
         "id":2,
@@ -13,7 +14,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h30/h37/9473140850718/9473140785182/9473140785182.jpg",
         "category":"him",
         "price":10378,
-        "description":"Nam congue, risus."
+        "description":"Nam congue, risus.",
+        "stock": 10
     },
     {
         "id":3,
@@ -21,7 +23,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h8c/h15/9564053897246/9564053831710/9564053831710.jpg",
         "category":"him",
         "price":22519,
-        "description":"Vestibulum ac est."
+        "description":"Vestibulum ac est.",
+        "stock": 10
     },
     {
         "id":4,
@@ -29,7 +32,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hdf/h22/9548894797854/9548894732318/9548894732318.jpg",
         "category":"her",
         "price":13068,
-        "description":"Curabitur gravida nisi."
+        "description":"Curabitur gravida nisi.",
+        "stock": 10
     },
     {
         "id":5,
@@ -37,7 +41,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hde/h51/9550137983006/9550137950238/9550137950238.jpg",
         "category":"him",
         "price":36910,
-        "description":"Donec diam neque."
+        "description":"Donec diam neque.",
+        "stock": 10
     },
     {
         "id":6,
@@ -45,7 +50,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hc6/h30/9550144339998/9550144307230/9550144307230.jpg",
         "category":"her",
         "price":25798,
-        "description":"Quisque ut erat."
+        "description":"Quisque ut erat.",
+        "stock": 10
     },
     {
         "id":7,
@@ -53,7 +59,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h3b/h0b/9548873334814/9548873269278/9548873269278.jpg",
         "category":"him",
         "price":43075,
-        "description":"Lorem ipsum dolor."
+        "description":"Lorem ipsum dolor.",
+        "stock": 10
     },
     {
         "id":8,
@@ -61,7 +68,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hbd/h72/9564073984030/9564073918494/9564073918494.jpg",
         "category":"her",
         "price":20124,
-        "description":"Ut tellus."
+        "description":"Ut tellus.",
+        "stock": 10
     },
     {
         "id":9,
@@ -69,7 +77,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h52/haa/9548889325598/9548889260062/9548889260062.jpg",
         "category":"her",
         "price":17057,
-        "description":"Phasellus sit amet erat."
+        "description":"Phasellus sit amet erat.",
+        "stock": 10
     },
     {
         "id":10,
@@ -77,7 +86,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hb4/h25/9469128572958/9469128507422/9469128507422.jpg",
         "category":"her",
         "price":14788,
-        "description":"Curabitur convallis."
+        "description":"Curabitur convallis.",
+        "stock": 10
     },
     {
         "id":11,
@@ -85,7 +95,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h5e/h9f/9469189193758/9469189128222/9469189128222.jpg",
         "category":"her",
         "price":48517,
-        "description":"Donec dapibus."
+        "description":"Donec dapibus.",
+        "stock": 10
     },
     {
         "id":12,
@@ -93,7 +104,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h2d/h0b/9570131017758/9570130952222/9570130952222.jpg",
         "category":"him",
         "price":22904,
-        "description":"Duis aliquam."
+        "description":"Duis aliquam.",
+        "stock": 10
     },
     {
         "id":13,
@@ -101,7 +113,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h91/h5f/9470221385758/9470221320222/9470221320222.jpg",
         "category":"her",
         "price":18617,
-        "description":"Sed sagittis."
+        "description":"Sed sagittis.",
+        "stock": 10
     },
     {
         "id":14,
@@ -109,7 +122,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h9a/hd2/9471273435166/9471273369630/9471273369630.jpg",
         "category":"her",
         "price":40444,
-        "description":"Praesent lectus."
+        "description":"Praesent lectus.",
+        "stock": 10
     },
     {
         "id":15,
@@ -117,7 +131,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h1f/h46/9552026763294/9552026697758/9552026697758.jpg",
         "category":"him",
         "price":60824,
-        "description":"Praesent lectus."
+        "description":"Praesent lectus.",
+        "stock": 10
     },
     {
         "id":16,
@@ -125,7 +140,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hda/hd3/9469210427422/9469210361886/9469210361886.jpg",
         "category":"her",
         "price":75380,
-        "description":"Praesent lectus."
+        "description":"Praesent lectus.",
+        "stock": 10
     },
     {
         "id":17,
@@ -133,7 +149,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h67/h63/9469224255518/9469224189982/9469224189982.jpg",
         "category":"her",
         "price":31201,
-        "description":"Maecenas ut massa."
+        "description":"Maecenas ut massa.",
+        "stock": 10
     },
     {
         "id":18,
@@ -141,7 +158,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h9c/he1/9470219485214/9470219419678/9470219419678.jpg",
         "category":"him",
         "price":65101,
-        "description":"Maecenas ut massa."
+        "description":"Maecenas ut massa.",
+        "stock": 10
     },
     {
         "id":19,
@@ -149,7 +167,8 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h5e/h0c/9469241655326/9469241589790/9469241589790.jpg",
         "category":"him",
         "price":48401,
-        "description":"Maecenas ut massa."
+        "description":"Maecenas ut massa.",
+        "stock": 10
     },
     {
         "id":20,
@@ -157,6 +176,7 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h3e/h6c/9524137656350/9524137590814/9524137590814.jpg",
         "category":"him",
         "price":37204,
-        "description":"Maecenas ut massa."
+        "description":"Maecenas ut massa.",
+        "stock": 10
     }
 ]

@@ -49,17 +49,17 @@ const Navbar = () => {
                     <ul className='uppercase flex flex-col'>
                         <Link
                             to={"/productos/him"}
-                            className="p-4 pl-4 w-1/2 hover:text-white hover:bg-slate-900 duration-200 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
+                            className="p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
                             FOR HIM
                         </Link>
                         <Link
                             to={"/productos/her"}
-                            className="p-4 pl-4 w-1/2 hover:text-white hover:bg-slate-900 duration-200 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
+                            className="p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
                             FOR HER
                         </Link>
                         <Link
                             to={"/productos"}
-                            className="p-4 pl-4 w-1/2 hover:text-white hover:bg-slate-900 duration-200 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
+                            className="p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-black ">
                             ALL
                         </Link>
                     </ul>

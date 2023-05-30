@@ -3,11 +3,9 @@ import { useParams } from 'react-router-dom';
 
 import { pedirProdsPorId } from '../../../functions/pedirProdsPorId';
 import ItemDetail from './ItemDetail';
-import Loader from '../../Loader';
 
 const ItemDetailContainer = ({ itemId }) => {
     const [item, setItem] = useState(null);
-    const [loader, setLoader] = useState(true);
     const id = useParams().id
 
     useEffect(() => {
@@ -18,7 +16,7 @@ const ItemDetailContainer = ({ itemId }) => {
     }, [id])
 
     return (
-        <div className='item-detail '>
+        <div className='item-detail'>
             {item && <ItemDetail item={item} />}
         </div>
     )
