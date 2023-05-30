@@ -13,7 +13,7 @@ const Item = ({ producto }) => {
                             alt={producto.name}
                         />
                     </Link>
-                    <p className='p-2 uppercase text-start ml-2'>{producto.name}</p>
+                    <p className='p-2 uppercase text-start'>{producto.name}</p>
                 </div>
             </div>
         </>

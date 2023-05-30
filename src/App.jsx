@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Footer from './components/Footer';
-import ItemListContainer from './components/containers/itemListContainer/ItemListContainer';
 import Error from './components/Error';
 import Header from './components/Header';
 import Navbar from './components/containers/navbar/Navbar';
+import ItemListContainer from './components/containers/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/containers/itemDetail/ItemDetailContainer';
 import './App.css';
 

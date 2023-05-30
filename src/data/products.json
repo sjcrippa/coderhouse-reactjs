@@ -83,7 +83,7 @@
         "id":11,
         "name":"Lady Millon Empire",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h5e/h9f/9469189193758/9469189128222/9469189128222.jpg",
-        "category":"him",
+        "category":"her",
         "price":48517,
         "description":"Donec dapibus."
     },
@@ -91,7 +91,7 @@
         "id":12,
         "name":"One Millon Parfum",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h2d/h0b/9570131017758/9570130952222/9570130952222.jpg",
-        "category":"her",
+        "category":"him",
         "price":22904,
         "description":"Duis aliquam."
     },
@@ -107,7 +107,7 @@
         "id":14,
         "name":"Olympéa Legend",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h9a/hd2/9471273435166/9471273369630/9471273369630.jpg",
-        "category":"him",
+        "category":"her",
         "price":40444,
         "description":"Praesent lectus."
     },
@@ -123,7 +123,7 @@
         "id":16,
         "name":"Olympéa Blossom",
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/hda/hd3/9469210427422/9469210361886/9469210361886.jpg",
-        "category":"him",
+        "category":"her",
         "price":75380,
         "description":"Praesent lectus."
     },
@@ -133,6 +133,30 @@
         "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h67/h63/9469224255518/9469224189982/9469224189982.jpg",
         "category":"her",
         "price":31201,
+        "description":"Maecenas ut massa."
+    },
+    {
+        "id":18,
+        "name":"Genius Me",
+        "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h9c/he1/9470219485214/9470219419678/9470219419678.jpg",
+        "category":"him",
+        "price":65101,
+        "description":"Maecenas ut massa."
+    },
+    {
+        "id":19,
+        "name":"Invictus Victory",
+        "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h5e/h0c/9469241655326/9469241589790/9469241589790.jpg",
+        "category":"him",
+        "price":48401,
+        "description":"Maecenas ut massa."
+    },
+    {
+        "id":20,
+        "name":"Pure XS",
+        "image":"https://medias.pacorabanne.com/cdn-cgi/image/width=1366,quality=90/https://medias.pacorabanne.com/medias/sys_master/images/h3e/h6c/9524137656350/9524137590814/9524137590814.jpg",
+        "category":"him",
+        "price":37204,
         "description":"Maecenas ut massa."
     }
 ]

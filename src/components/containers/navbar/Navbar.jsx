@@ -1,21 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {AiOutlineMenu} from 'react-icons/ai'
 
 import { pacoLogo } from '../../../assets';
 import CartWidget from './CartWidget';
 import NavItems from './NavItems';
+
 const Navbar = () => {
     return (
         <>
             <div className='relative'>
                 <nav className='flex items-center h-16 p-6 bg-white w-full'>
-                    <a href="/">
+                    <Link to={"/"}>
                         <img
                             className='w-36 sm:min-w-36'
                             src={pacoLogo}
                             alt="logo"
                         />
-                    </a>
+                    </Link>
                     <NavItems />
                     <CartWidget />
                     <button>
