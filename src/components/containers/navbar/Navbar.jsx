@@ -8,7 +8,7 @@ import CartWidget from './CartWidget';
 import NavItems from './NavItems';
 
 const Navbar = () => {
-    const [menu, setMenu] = useState(false);
+    const [menu, setMenu] = useState(true);
 
     const handleMenu = () => {
         setMenu(!menu)
