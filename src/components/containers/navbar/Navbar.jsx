@@ -9,14 +9,13 @@ import NavItems from './NavItems';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(true);
-    const [bdrop, setBdrop] = useState(false)
 
     const handleMenu = () => {
         setMenu(!menu)
     };
 
     const handleBdrop = () => {
-        !menu && setBdrop(true)
+        !menu && setMenu(false)
     }
 
     return (
