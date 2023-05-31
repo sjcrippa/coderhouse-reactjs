@@ -9,14 +9,27 @@ import NavItems from './NavItems';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(true);
+    const [bdrop, setBdrop] = useState(false)
 
     const handleMenu = () => {
         setMenu(!menu)
+    };
+
+    const handleBdrop = () => {
+/*         if (!setMenu) {
+            setBdrop(false)
+        } else {
+            console.log('no funciona');
+        } */
+        !setMenu ? setBdrop(true) : setBdrop(false);
     }
 
     return (
         <>
-            <div className=''>
+            <div className='relative'>
+                <div className='absolute top-0 left-0 w-full h-screen bg-black/50 z-0'>
+                    {bdrop}
+                </div>
                 <nav className='flex items-center h-16 p-6 bg-white w-full'>
                     <Link to={"/"}>
                         <img
@@ -26,26 +39,26 @@ const Navbar = () => {
                         />
                     </Link>
                     <NavItems />
-                    <div className='hidden md:flex'>
-                        <CartWidget />
-                    </div>
                     <div
-                        onClick={handleMenu}
+                        onClick={handleMenu} 
                         className='p-1 flex mx-auto text-black md:hidden'>
                         {!menu
                             ?
-                            <button className=''>
+                            <button className='z-10'>
                                 <AiOutlineClose size={30} />
                             </button>
                             :
-                            <button className=''>
+                            <button 
+                            onClick={handleBdrop}
+                            className='z-10'>
                                 <AiOutlineMenu size={30} />
                             </button>
                         }
                     </div>
+                        <CartWidget />
                 </nav>
-
-                <nav className={!menu ? 'fixed left-0 top-0 w-[40%] bg-white h-full ease-in-out duration-500' : 'fixed left-[-100%]'} >
+                
+                <nav className={!menu ? 'fixed left-0 top-0 w-[40%] bg-white h-full border-r-2 border-black/20 ease-in-out duration-500 backdrop-opacity-50	' : 'fixed left-[-100%]'} >
                     <ul className='uppercase flex flex-col'>
                         <Link
                             to={"/productos/him"}
@@ -63,11 +76,7 @@ const Navbar = () => {
                             ALL
                         </Link>
                     </ul>
-                    <div className='p-4 -mt-3'>
-                        <CartWidget />
-                    </div>
                 </nav>
-
             </div>
         </>
     )
