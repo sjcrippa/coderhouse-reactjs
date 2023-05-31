@@ -16,19 +16,13 @@ const Navbar = () => {
     };
 
     const handleBdrop = () => {
-/*         if (!setMenu) {
-            setBdrop(false)
-        } else {
-            console.log('no funciona');
-        } */
-        !setMenu ? setBdrop(true) : setBdrop(false);
+        !menu && setBdrop(true)
     }
 
     return (
         <>
             <div className='relative'>
-                <div className='absolute top-0 left-0 w-full h-screen bg-black/50 z-0'>
-                    {bdrop}
+                <div className={menu ? 'left-[-100%]' : 'absolute top-0 left-0 w-full h-screen bg-black/50 z-0'}>
                 </div>
                 <nav className='flex items-center h-16 p-6 bg-white w-full'>
                     <Link to={"/"}>
@@ -40,7 +34,7 @@ const Navbar = () => {
                     </Link>
                     <NavItems />
                     <div
-                        onClick={handleMenu} 
+                        onClick={handleMenu}
                         className='p-1 flex mx-auto text-black md:hidden'>
                         {!menu
                             ?
@@ -48,16 +42,16 @@ const Navbar = () => {
                                 <AiOutlineClose size={30} />
                             </button>
                             :
-                            <button 
-                            onClick={handleBdrop}
-                            className='z-10'>
+                            <button
+                                onClick={handleBdrop}
+                                className='z-10'>
                                 <AiOutlineMenu size={30} />
                             </button>
                         }
                     </div>
-                        <CartWidget />
+                    <CartWidget />
                 </nav>
-                
+
                 <nav className={!menu ? 'fixed left-0 top-0 w-[40%] bg-white h-full border-r-2 border-black/20 ease-in-out duration-500 backdrop-opacity-50	' : 'fixed left-[-100%]'} >
                     <ul className='uppercase flex flex-col'>
                         <Link
