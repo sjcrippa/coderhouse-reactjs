@@ -12,3 +12,12 @@
     height: 120vh;
     
 }
+
+.nav-btn:hover{
+    background-image: linear-gradient(to right, #0f172a, #454859, #80808d, #bebdc4, #ffffff);
+}
+
+.blur-nav{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
