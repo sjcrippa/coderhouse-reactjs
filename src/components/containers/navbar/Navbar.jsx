@@ -16,12 +16,12 @@ const Navbar = () => {
 
     const handleBdrop = () => {
         !menu && setMenu(false)
-    }
+    };
 
     return (
         <>
             <div className='relative'>
-                <div className={menu ? 'left-[-100%]' : 'absolute top-0 left-0 w-full h-screen bg-black/50 z-0'}>
+                <div className={menu ? 'left-[-100%]' : 'absolute top-0 left-0 w-full h-[1990vh]  bg-black/50 z-0 md:hidden'}>
                 </div>
                 <nav className='flex items-center h-16 p-6 bg-white w-full'>
                     <Link to={"/"}>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <CartWidget />
                 </nav>
 
-                <nav className={!menu ? 'fixed left-0 top-0 w-[40%] bg-white h-full border-r-2 border-black/20 ease-in-out duration-500 backdrop-opacity-50	' : 'fixed left-[-100%]'} >
+                <nav className={!menu ? 'fixed left-0 top-0 w-[40%] bg-white h-full border-r-2 border-black/20 ease-in-out duration-500 backdrop-opacity-50 md:hidden' : 'fixed left-[-100%]'} >
                     <ul className='uppercase flex flex-col'>
                         <Link
                             to={"/productos/him"}
