@@ -59,7 +59,7 @@ const Navbar = () => {
                     <CartWidget />
                 </nav>
 
-                <nav className={!menu ? 'fixed mt-16 left-0 w-[40%] bg-white opacity-90 h-full ease-in-out duration-700 backdrop-opacity-50 md:hidden' : 'fixed left-[-100%]'} >
+                <nav className={!menu ? 'fixed mt-16 left-0 w-[40%] bg-white  h-full ease-in-out duration-700 md:hidden' : 'fixed left-[-100%]'} >
                     <ul className='uppercase flex flex-col'>
                         <Link
                             to={"/productos/him"}

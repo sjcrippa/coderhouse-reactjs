@@ -17,8 +17,8 @@ const ItemDetail = ({ item }) => {
     }
     return (
         <>
-            <div className='mx-auto'>
-                <div className='ml-5 flex'>
+            <div className='py-16 mx-auto'>
+                <div className='ml-8 flex'>
                     <div className='card mt-10 w-1/3 md:w-1/4 xl:w-1/5 rounded-xl shadow-lg bg-white shadow-black hover:shadow-2xl hover:shadow-black duration-150'>
                         <img className='p-1 rounded-t-xl' src={item.image} alt="prod-img" />
                         <div className='p-1 mb-1 text-sm lg:text-base text-center font-serif font-semibold'>
