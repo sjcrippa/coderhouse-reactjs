@@ -30,7 +30,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <div className='p-7'>
+            <div className='py-16'>
                 {!loader ? <Loader /> : <ItemList productos={productos} title={title} />}
             </div>
         </>
