@@ -29,7 +29,6 @@ const Footer = () => {
                     alt="logo" />
                     </a>
                 </div>
-
             </footer>
         </>
     )
