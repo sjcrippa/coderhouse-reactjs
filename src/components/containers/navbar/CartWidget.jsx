@@ -13,7 +13,7 @@ const CartWidget = () => {
                         className='w-6 h-6'
                         src={cart}
                         alt="cart" />
-                    <div className='text-sm'>1</div>
+                    <div className='text-sm'>0</div>
                 </button>
             </Link>
         </>

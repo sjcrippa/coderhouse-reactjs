@@ -31,7 +31,7 @@ const Navbar = () => {
                 </div>
                 <nav 
                 onChange={handleBlur}
-                className={!blur ?  'blur-nav fixed flex items-center h-16 p-6 bg-white bg-opacity-80 bg-clip-padding w-full' : 'blur-nav fixed flex items-center h-16 p-6 bg-white w-full' }>
+                className={!blur ?  'blur-nav fixed flex items-center h-16 p-6 bg-white bg-opacity-80 bg-clip-padding w-full' : 'blur-nav fixed flex items-center h-16 p-6 bg-white w-full z-10' }>
                     <Link to={"/"}>
                         <img
                             className='w-36 sm:min-w-36'
@@ -59,7 +59,7 @@ const Navbar = () => {
                     <CartWidget />
                 </nav>
 
-                <nav className={!menu ? 'fixed mt-16 left-0 w-[40%] bg-white  h-full ease-in-out duration-700 md:hidden' : 'fixed left-[-100%]'} >
+                <nav className={!menu ? 'fixed mt-16 left-0 w-[40%] bg-white  h-full ease-in-out duration-700 md:hidden z-10' : 'fixed left-[-100%]'} >
                     <ul className='uppercase flex flex-col'>
                         <Link
                             to={"/productos/him"}

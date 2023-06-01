@@ -10,7 +10,12 @@
     background-size: cover;
     width: 100%;
     height: 120vh;
-    
+}
+
+.cart-detail{
+    background-image: url('./assets/sectionDos.jpg');
+    background-size: cover;
+    height: 110vh;
 }
 
 .nav-btn:hover{
