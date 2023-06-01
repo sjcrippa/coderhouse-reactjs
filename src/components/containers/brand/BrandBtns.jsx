@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const BrandBtns = () => {
     return (
         <>
-            <div className='mt-16 flex justify-center text-base'>
+            <div className='mt-12 flex justify-center text-base'>
                 <div className='flex flex-col md:flex md:flex-row gap-7'>
 
                     <button
