@@ -58,7 +58,7 @@ const Navbar = () => {
                     </div>
                     <div className='items-end'>
 
-                    <CartWidget />
+                        <CartWidget />
                     </div>
                 </nav>
 
@@ -79,10 +79,14 @@ const Navbar = () => {
                             className="nav-btn p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-slate-800 w-36">
                             ALL
                         </Link>
-                        <img 
-                        className='w-32 ml-2'
-                        src={logoDos} 
-                        alt="logo" />
+                        <Link
+                            to={'/'}
+                        >
+                            <img
+                                className='w-32 ml-2'
+                                src={logoDos}
+                                alt="logo" />
+                        </Link>
                     </ul>
                 </nav>
             </div>
