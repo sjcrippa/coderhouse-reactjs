@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai'
 import { AiOutlineClose } from 'react-icons/ai'
 
-import { pacoLogo } from '../../../assets';
+import { logoDos, pacoLogo } from '../../../assets';
 import CartWidget from './CartWidget';
 import NavItems from './NavItems';
 import '../../../App.css';
@@ -45,13 +45,13 @@ const Navbar = () => {
                         className='mx-auto p-1 text-black md:hidden'>
                         {!menu
                             ?
-                            <button className='z-10 items-center -ml-[12rem]'>
+                            <button className='z-10 items-center -ml-[11rem] sm:-ml-[20rem]'>
                                 <AiOutlineClose size={30} />
                             </button>
                             :
                             <button
                                 onClick={handleBdrop}
-                                className='z-10 items-center -ml-[12rem]'>
+                                className='z-10 items-center -ml-[11rem] sm:-ml-[20rem]'>
                                 <AiOutlineMenu size={30} />
                             </button>
                         }
@@ -79,6 +79,10 @@ const Navbar = () => {
                             className="nav-btn p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-slate-800 w-36">
                             ALL
                         </Link>
+                        <img 
+                        className='w-32 ml-2'
+                        src={logoDos} 
+                        alt="logo" />
                     </ul>
                 </nav>
             </div>

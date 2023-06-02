@@ -21,5 +21,5 @@ export {
     logoDos,
     github,
     linkedin,
-    twitter
+    twitter,
 }
