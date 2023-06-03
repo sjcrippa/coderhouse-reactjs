@@ -19,7 +19,7 @@ const ItemDetail = ({ item }) => {
         <>
             <div className='py-16 mx-auto '>
                 <div className='ml-8 block sm:flex'>
-                    <div className='card mt-10 w-4/6 mx-auto sm:w-1/6 xl:w-1/5 rounded-xl shadow-lg bg-white shadow-black hover:shadow-2xl hover:shadow-black duration-150'>
+                    <div className='card mt-10 w-4/6 md:w-3/6 sm:bg-red-500 xl:w-1/5 rounded-xl shadow-lg bg-white shadow-black hover:shadow-2xl hover:shadow-black duration-150'>
                         <img className='p-1 rounded-t-xl' src={item.image} alt="prod-img" />
                         <div className='p-1 mb-1 text-sm lg:text-base text-center font-serif font-semibold'>
                             <h3 className='uppercase text-lg border-b-2 border-black'>{item.name}</h3>
