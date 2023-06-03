@@ -18,31 +18,37 @@ const ItemDetail = ({ item }) => {
     }
 
     const handleDetails = () => {
-        details && setDetails(true)
-        console.log('estoy cliqueando el boton');
-    }
+        if (!details) {
+            setDetails(true)
+        } else {
+            setDetails(false)
+        }
+    } 
 
     return (
         <>
-            <div className='py-16 mx-auto '>
+            <div className='py-16 mx-auto'>
                 <div className='block sm:flex'>
                     <div className='card mx-auto mt-10 w-4/6 md:w-3/6 sm:bg-red-500 xl:w-1/5 rounded-xl shadow-lg bg-white shadow-black hover:shadow-2xl hover:shadow-black duration-150'>
                         <h3 className='py-1 -mb-2 ml-2 uppercase text-lg'>{item.name}</h3>
                         <img className='p-1 rounded-t-xl' src={item.image} alt="prod-img" />
                         <div className='p-2 mb-2 text-sm lg:text-base text-center font-serif font-semibold'>
-                            <section className='border-t-2 border-black'></section>
-                            <button className='mt-2'>{!details ? 'Click to see details' : handleDetails()}</button>
-                            <div className='dropdown'>
-                                <p className='mt-2 text-start'>$ {item.price}</p>
-                                <p className='text-start'>For {item.category}</p>
-                                <p className='text-start'>{item.description}</p>
-                            </div>
+                            <section className='border-t-2 border-slate-900'></section>
+                            <button
+                                onClick={handleDetails}
+                                className='mt-2 text-lg uppercase font-[verdana] text-slate-900'>{!details ? 'Click for details' : 
+                                <div className='dropdown'>
+                                    <p className='mt-2 mb-2 text-center'>For {item.category}</p>
+                                    <p className='text-start'>$ {item.price}</p>
+                                    <p className='text-start'>{item.description}</p>
+                                </div>}
+                            </button>
                         </div>
                     </div>
 
-                    <div className='mt-10 m-5 mx-16 md:mx-8 rounded-xl bg-white p-3 shadow-lg shadow-black'>
+                    <div className='mt-10 m-5 mx-16 md:mx-8 rounded-xl bg-white p-3 shadow-lg shadow-black text-slate-900'>
                         <h2 className='text-center text-xl'>ORDER IT  NOW!</h2>
-                        <p>VISA</p>
+                        <p className='mt-2'>VISA</p>
                         <p>MASTERCARD</p>
                         <p>HOME DELIVER</p>
                         <Counter stock={stock} handleAdd={handleAdd} handleRemove={handleRemove} handleCart={handleCart} />
