@@ -14,28 +14,11 @@ import './App.css';
 const App = () => {
   const [cart, setCart] = useState([]);
   /* LOGICA PARA CONTROLAR EL COMPORTAMIENTO DEL CARRITO Y SU CONTADOR. */
-  const handleCart = ({item, quantity}) => {
-    const itemAdd = { ...item, quantity }
-
-    const newCart = [...cart];
-    const prodInCart = newCart.find((producto) => producto.id === itemAdd.id);
-
-    if (prodInCart) {
-      prodInCart.quantity += quantity;
-    } else {
-      newCart.push(itemAdd)
-    }
-    setCart(newCart)
-  }
-
-  const cartAmount = () => {
-    return cart.reduce((acc, prod) => acc + prod.quantity, 0);
-  }
 
   return (
     <>
       <div>
-        <CartContext.Provider value={{ cart, handleCart, cartAmount }}>
+        <CartContext.Provider value={{ cart, setCart }}>
           <BrowserRouter>
             <Navbar />
             <Routes>

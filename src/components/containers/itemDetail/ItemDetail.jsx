@@ -7,15 +7,21 @@ const ItemDetail = ({ item }) => {
 
   const [quantity, setQuantity] = useState(1);
   const [details, setDetails] = useState(false);
-  const { cart, handleCart } = useContext(CartContext);
+  
+  const { cart, setCart } = useContext(CartContext)
   console.log(cart);
 
   /* LOGICA PARA CONTADOR FUNCIONAL */
-  const handleAdd = () => {
+  const plusOne = () => {
     quantity < item.stock && setQuantity(quantity + 1)
   };
-  const handleRemove = () => {
+  const minusOne = () => {
     quantity > 1 && setQuantity(quantity - 1)
+  };
+
+  const handleAddToCart = () => {
+    const itemAdded = { ...item, quantity }
+    setCart([...cart, itemAdded])
   };
 
   /* LOGICA PARA BOTON DE DETALLES */
@@ -55,15 +61,16 @@ const ItemDetail = ({ item }) => {
               <p>HOME DELIVER</p>
               <Counter
                 quantity={quantity}
-                handleAdd={handleAdd}
-                handleRemove={handleRemove}
-                handleCart={() => {handleCart(item, quantity)}} />
+                plusOne={plusOne}
+                minusOne={minusOne}
+                handleAddToCart={handleAddToCart}
+              />
             </div>
           </div>
         </div>
       </div>
     </>
-  ) 
+  )
 }
 
 export default ItemDetail   
