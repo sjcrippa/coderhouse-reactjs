@@ -6,7 +6,8 @@
         "category":"him",
         "price":11891,
         "description":"Maecenas pulvinar lobortis est.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":2,
@@ -15,7 +16,8 @@
         "category":"him",
         "price":10378,
         "description":"Nam congue, risus.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":3,
@@ -24,7 +26,8 @@
         "category":"him",
         "price":22519,
         "description":"Vestibulum ac est.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":4,
@@ -33,7 +36,8 @@
         "category":"her",
         "price":13068,
         "description":"Curabitur gravida nisi.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":5,
@@ -42,7 +46,8 @@
         "category":"him",
         "price":36910,
         "description":"Donec diam neque.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":6,
@@ -51,7 +56,8 @@
         "category":"her",
         "price":25798,
         "description":"Quisque ut erat.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":7,
@@ -60,7 +66,8 @@
         "category":"him",
         "price":43075,
         "description":"Lorem ipsum dolor.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":8,
@@ -69,7 +76,8 @@
         "category":"her",
         "price":20124,
         "description":"Ut tellus.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":9,
@@ -78,7 +86,8 @@
         "category":"her",
         "price":17057,
         "description":"Phasellus sit amet erat.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":10,
@@ -87,7 +96,8 @@
         "category":"her",
         "price":14788,
         "description":"Curabitur convallis.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":11,
@@ -96,7 +106,8 @@
         "category":"her",
         "price":48517,
         "description":"Donec dapibus.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":12,
@@ -105,7 +116,8 @@
         "category":"him",
         "price":22904,
         "description":"Duis aliquam.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":13,
@@ -114,7 +126,8 @@
         "category":"her",
         "price":18617,
         "description":"Sed sagittis.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":14,
@@ -123,7 +136,8 @@
         "category":"her",
         "price":40444,
         "description":"Praesent lectus.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":15,
@@ -132,7 +146,8 @@
         "category":"him",
         "price":60824,
         "description":"Praesent lectus.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":16,
@@ -141,7 +156,8 @@
         "category":"her",
         "price":75380,
         "description":"Praesent lectus.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":17,
@@ -150,7 +166,8 @@
         "category":"her",
         "price":31201,
         "description":"Maecenas ut massa.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":18,
@@ -159,7 +176,8 @@
         "category":"him",
         "price":65101,
         "description":"Maecenas ut massa.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":19,
@@ -168,7 +186,8 @@
         "category":"him",
         "price":48401,
         "description":"Maecenas ut massa.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     },
     {
         "id":20,
@@ -177,6 +196,7 @@
         "category":"him",
         "price":37204,
         "description":"Maecenas ut massa.",
-        "stock": 10
+        "stock": 10,
+        "quantity": 1
     }
 ]

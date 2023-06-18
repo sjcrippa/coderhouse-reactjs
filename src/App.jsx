@@ -14,14 +14,14 @@ import './App.css';
 const App = () => {
   const [cart, setCart] = useState([]);
   /* LOGICA PARA CONTROLAR EL COMPORTAMIENTO DEL CARRITO Y SU CONTADOR. */
-  const handleCart = ({item, stock}) => {
-    const itemAdd = { ...item, stock }
+  const handleCart = ({item, quantity}) => {
+    const itemAdd = { ...item, quantity }
 
     const newCart = [...cart];
     const prodInCart = newCart.find((producto) => producto.id === itemAdd.id);
 
     if (prodInCart) {
-      prodInCart.stock += stock;
+      prodInCart.quantity += quantity;
     } else {
       newCart.push(itemAdd)
     }
@@ -29,7 +29,7 @@ const App = () => {
   }
 
   const cartAmount = () => {
-    return cart.reduce((acc, prod) => acc + prod.stock, 0);
+    return cart.reduce((acc, prod) => acc + prod.quantity, 0);
   }
 
   return (

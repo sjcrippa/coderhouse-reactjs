@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Counter = ({ stock, handleRemove, handleAdd, handleCart }) => {
+const Counter = ({ quantity, handleRemove, handleAdd, handleCart }) => {
 
     return (
         <>
@@ -8,7 +8,7 @@ const Counter = ({ stock, handleRemove, handleAdd, handleCart }) => {
                 <div className='p-2 items-center md:-my-3 md:h-12 xl:px-8 flex flex-col gap-5 text-black'>
                     <div className='flex gap-5 text-lg'>
                         <button className='font-semibold hover:scale-150 duration-100' onClick={handleRemove}>-</button>
-                        <p className='cursor-default'>{stock}</p>
+                        <p className='cursor-default'>{quantity}</p>
                         <button className='font-semibold hover:scale-150 duration-100' onClick={handleAdd}>+</button>
                     </div>
                     <button 

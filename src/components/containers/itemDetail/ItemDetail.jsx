@@ -5,17 +5,17 @@ import { CartContext } from '../../../context/CartContext';
 
 const ItemDetail = ({ item }) => {
 
-  const [stock, setStock] = useState(1);
+  const [quantity, setQuantity] = useState(1);
   const [details, setDetails] = useState(false);
   const { cart, handleCart } = useContext(CartContext);
   console.log(cart);
 
   /* LOGICA PARA CONTADOR FUNCIONAL */
   const handleAdd = () => {
-    stock < item.stock && setStock(stock + 1)
+    quantity < item.stock && setQuantity(quantity + 1)
   };
   const handleRemove = () => {
-    stock > 1 && setStock(stock - 1)
+    quantity > 1 && setQuantity(quantity - 1)
   };
 
   /* LOGICA PARA BOTON DE DETALLES */
@@ -54,16 +54,16 @@ const ItemDetail = ({ item }) => {
               <p>MASTERCARD</p>
               <p>HOME DELIVER</p>
               <Counter
-                stock={stock}
+                quantity={quantity}
                 handleAdd={handleAdd}
                 handleRemove={handleRemove}
-                handleCart={() => {handleCart(item, stock)}} />
+                handleCart={() => {handleCart(item, quantity)}} />
             </div>
           </div>
         </div>
       </div>
     </>
-  )
+  ) 
 }
 
 export default ItemDetail   
