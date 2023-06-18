@@ -47,12 +47,12 @@ const Navbar = () => {
               :
               <button
                 onClick={handleBdrop}
-                className='z-10 items-center -ml-[11rem] sm:-ml-[20rem]'>
+                className='z-10 items-center'>
                 <AiOutlineMenu size={30} />
               </button>
             }
           </div>
-          <div className='items-end'>
+          <div className=''>
 
             <CartWidget />
           </div>

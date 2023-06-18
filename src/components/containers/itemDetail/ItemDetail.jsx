@@ -7,22 +7,18 @@ const ItemDetail = ({ item }) => {
 
   const [stock, setStock] = useState(1);
   const [details, setDetails] = useState(false);
-  const { cart, setCart } = useContext(CartContext);
+  const { cart, handleCart } = useContext(CartContext);
   console.log(cart);
 
+  /* LOGICA PARA CONTADOR FUNCIONAL */
   const handleAdd = () => {
     stock < item.stock && setStock(stock + 1)
   };
-
   const handleRemove = () => {
     stock > 1 && setStock(stock - 1)
   };
 
-  const handleCart = () => {
-    const itemAdd = { ...item, stock }
-    console.log(itemAdd);
-  }
-
+  /* LOGICA PARA BOTON DE DETALLES */
   const handleDetails = () => {
     if (!details) {
       setDetails(true)
@@ -61,7 +57,7 @@ const ItemDetail = ({ item }) => {
                 stock={stock}
                 handleAdd={handleAdd}
                 handleRemove={handleRemove}
-                handleCart={handleCart} />
+                handleCart={() => {handleCart(item, stock)}} />
             </div>
           </div>
         </div>
