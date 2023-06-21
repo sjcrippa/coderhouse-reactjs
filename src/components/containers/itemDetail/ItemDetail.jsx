@@ -8,7 +8,7 @@ const ItemDetail = ({ item }) => {
   const [quantity, setQuantity] = useState(1);
   const [details, setDetails] = useState(false);
   
-  const { cart, setCart } = useContext(CartContext)
+  const { cart, handleAddToCart } = useContext(CartContext)
   console.log(cart);
 
   /* LOGICA PARA CONTADOR FUNCIONAL */
@@ -19,19 +19,14 @@ const ItemDetail = ({ item }) => {
     quantity > 1 && setQuantity(quantity - 1)
   };
 
-  const handleAddToCart = () => {
-    const itemAdded = { ...item, quantity }
-    setCart([...cart, itemAdded])
-  };
-
   /* LOGICA PARA BOTON DE DETALLES */
   const handleDetails = () => {
     if (!details) {
       setDetails(true)
     } else {
       setDetails(false)
-    }
-  }
+    };
+  };
 
   return (
     <>
@@ -63,14 +58,15 @@ const ItemDetail = ({ item }) => {
                 quantity={quantity}
                 plusOne={plusOne}
                 minusOne={minusOne}
-                handleAddToCart={handleAddToCart}
+                /* al no poder agregar parametros en react dentro de las props, creamos una funcion flecha dentro: */
+                handleAddToCart={() => {handleAddToCart(item, quantity)}}
               />
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ItemDetail   
+export default ItemDetail;
