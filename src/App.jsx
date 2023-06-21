@@ -26,11 +26,13 @@ const App = () => {
     }
     setCart(newCart);
   };
-
+  const quantityInCart = () => {
+    return cart.reduce((acc, prod) => acc + prod.quantity, 0);
+  }
   return (
     <>
       <div>
-        <CartContext.Provider value={{ cart, handleAddToCart }}>
+        <CartContext.Provider value={{ cart, handleAddToCart, quantityInCart }}>
           <BrowserRouter>
             <Navbar />
             <Routes>

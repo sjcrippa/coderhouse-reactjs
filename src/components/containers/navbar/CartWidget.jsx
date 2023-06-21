@@ -2,11 +2,11 @@ import React, { useContext } from 'react'
 
 import { cart } from '../../../assets'
 import { Link } from 'react-router-dom'
-/* import { CartContext } from '../../../context/CartContext'
- */
+import { CartContext } from '../../../context/CartContext'
+
 const CartWidget = () => {
-/*     const { cartAmount } = useContext(CartContext);
- */
+    const { quantityInCart } = useContext(CartContext);
+
     return (
         <>
             <Link to={"/cart"}>
@@ -15,7 +15,7 @@ const CartWidget = () => {
                         className='w-6 h-6'
                         src={cart}
                         alt="cart" />
-                    <div className='text-sm'></div>
+                    <span className='text-sm'>{quantityInCart()}</span>
                 </button>
             </Link>
         </>

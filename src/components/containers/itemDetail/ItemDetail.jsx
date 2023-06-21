@@ -9,7 +9,6 @@ const ItemDetail = ({ item }) => {
   const [details, setDetails] = useState(false);
   
   const { cart, handleAddToCart } = useContext(CartContext)
-  console.log(cart);
 
   /* LOGICA PARA CONTADOR FUNCIONAL */
   const plusOne = () => {
