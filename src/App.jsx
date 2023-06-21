@@ -8,31 +8,15 @@ import Navbar from './components/containers/navbar/Navbar';
 import Cart from './components/Cart';
 import ItemListContainer from './components/containers/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/containers/itemDetail/ItemDetailContainer';
-import { CartContext } from './context/CartContext';
+import { CartContext, CartProvider } from './context/CartContext';
 import './App.css';
 
 const App = () => {
-  const [cart, setCart] = useState([]);
-  /* LOGICA PARA CONTROLAR EL COMPORTAMIENTO DEL CARRITO Y SU CONTADOR. */
-  const handleAddToCart = (item, quantity) => {
-    const itemAdded = { ...item, quantity }
-    const newCart = [...cart]; /* aca se genero una copia del carrito original para poder modificar su estado evitando conflictos. */
-    const prodInCart = newCart.find((producto) => producto.id === itemAdded.id);
 
-    if(prodInCart){
-      prodInCart.quantity += quantity;
-    } else{
-      newCart.push(itemAdded)
-    }
-    setCart(newCart);
-  };
-  const quantityInCart = () => {
-    return cart.reduce((acc, prod) => acc + prod.quantity, 0);
-  }
   return (
     <>
       <div>
-        <CartContext.Provider value={{ cart, handleAddToCart, quantityInCart }}>
+        <CartProvider>
           <BrowserRouter>
             <Navbar />
             <Routes>
@@ -45,7 +29,7 @@ const App = () => {
             </Routes>
             <Footer />
           </BrowserRouter>
-        </CartContext.Provider>
+        </CartProvider>
       </div>
     </>
   )
