@@ -6,11 +6,11 @@ const cartInit = JSON.parse(localStorage.getItem('cart')) || [];
 
 export const CartProvider = ({ children }) => {
 
-    /* LOGICA PARA CONTROLAR EL COMPORTAMIENTO DEL CARRITO Y SU CONTADOR. */
+    /* Logic for controlling cart and counter behavior: */
     const [cart, setCart] = useState(cartInit);
     const handleAddToCart = (item, quantity) => {
         const itemAdded = { ...item, quantity }
-        const newCart = [...cart]; /* aca se genero una copia del carrito original para poder modificar su estado evitando conflictos. */
+        const newCart = [...cart]; /* here we are generating a new cart to avoid conflict in the origin one. */
         const prodInCart = newCart.find((producto) => producto.id === itemAdded.id);
 
         if (prodInCart) {
@@ -21,21 +21,28 @@ export const CartProvider = ({ children }) => {
         setCart(newCart);
     };
 
-    /* LOGICA PARA AGREGAR CANTIDAD OBTENIDA AL CARTWIDGET */
+    /* Logic for adding to cartwidget the amount obteined: */
     const quantityInCart = () => {
         return cart.reduce((acc, prod) => acc + prod.quantity, 0);
     }
 
-    /* LOGICA PARA MOSTRAR TOTAL EN EL CARRITO */
+    /* Logic for showing the total amount on the cart: */
     const totalAmount = () => {
         return cart.reduce((acc, prod) => acc + prod.price * prod.quantity, 0);
     }
 
-    /* LOGICA PARA VACIAR CARRITO */
+    /* Logic for removing a single item. */
+    const removeItem = (id) => {
+        const items = cart.filter(item => item.id !== id)
+        setCart([...items])
+    }
+
+    /* Logic for clearing the cart:  */
     const handleClearCart = () => {
         setCart([]);
     };
 
+    /* Logic for cart storage: */
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart))
     },[cart])
@@ -46,6 +53,7 @@ export const CartProvider = ({ children }) => {
             handleAddToCart,
             quantityInCart,
             totalAmount,
+            removeItem,
             handleClearCart
         }}>
             {children}
