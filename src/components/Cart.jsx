@@ -12,8 +12,8 @@ const Cart = () => {
 
   return (
     <>
-      <div className='cart-detail h-screen py-16 z-0'>
-        <div className='item-box mx-5 md:mx-10 lg:mx-24 mt-10 bg-white h-[80vh] overflow-y-scroll rounded-md p-1'>
+      <div className='cart-detail h-screen py-16'>
+        <div className='item-box mx-5 md:mx-10 lg:mx-24 mt-10 bg-white h-[80vh] opacity-90 overflow-y-scroll rounded-md p-1'>
           <h1 className='p-2 text-start text-xl uppercase text-slate-900 '>Order Detail</h1>
           {
             cart.map((item) => (
@@ -43,12 +43,12 @@ const Cart = () => {
                   <button onClick={handleClear}>CLEAR</button>
                 </div>
               </div>
-              : <h2 className='p-2 m-2 w-2/3 sm:w-1/2 rounded-lg bg-red-600 text-white text-sm text-center mx-auto'>Oh! You have not added any products.</h2>
+              : <h2 className='p-2 m-2 w-2/3 sm:w-1/2 rounded-lg bg-red-600 text-white text-sm text-center mx-auto'>Oh! You haven't added any products.</h2>
           }
         </div>
         <div className='flex justify-end mt-10 mr-10'>
           <Link to={'/checkout'}>
-            <button className='uppercase text-2xl bg-slate-700 rounded text-white p-3'>Go to checkout</button>
+            <button className='uppercase text-2xl bg-indigo-700 rounded text-white p-3'>Go to checkout</button>
           </Link>
         </div>
       </div>
