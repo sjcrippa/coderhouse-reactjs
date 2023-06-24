@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 
 import { CartContext } from '../context/CartContext';
 
+import trash from '../assets/trash.svg';
+import trashAlt from '../assets/trashAlt.svg';
+
 const Cart = () => {
   const { cart, totalAmount, handleClearCart, removeItem } = useContext(CartContext);
 
@@ -18,16 +21,16 @@ const Cart = () => {
           {
             cart.map((item) => (
               <div className='bg-black text-white w-full' key={item.id}>
-                <div className='flex items-center gap-24 border-b border-white'>
-                  <div className='flex w-full justify-between items-center'>
-                    <img src={item.image} alt="img" width={100} />
+                <div className='flex justify-start items-center gap-5 border-b border-white'>
+                  <img src={item.image} alt="img" width={100} />
+                  <div className='flex-col items-center sm:flex sm:flex-row sm:w-full sm:justify-between'>
                     <h2>{item.name}</h2>
-                    <p>{item.quantity} x {item.price}</p>
-                  </div>
-                  <div className='flex w-full justify-between'>
-                    <p className=''>Total: ${item.price * item.quantity}</p>
-                    <button onClick={removeItem}>
-                      Clear Item
+                    <p className='tracking-wider'>{item.quantity} x {item.price}</p>
+                    <p className='tracking-wider'>Total: ${item.price * item.quantity}</p>
+                    <button 
+                      className='translate-x-36 -translate-y-10 sm:relative sm:translate-x-0 sm:translate-y-0'
+                      onClick={() => removeItem(item.id)}>
+                      <img className='w-8 h-8' src={trash} alt="trash icon" />
                     </button>
                   </div>
                   <br />
@@ -40,7 +43,9 @@ const Cart = () => {
               ? <div className='mt-2 text-2xl mx-5 md:mx-10 lg:mx-24'>
                 <div className='flex gap-5 justify-end'>
                   <h2 className=''>Total ${totalAmount()} </h2>
-                  <button onClick={handleClear}>CLEAR</button>
+                  <button onClick={handleClear}>
+                    <img className='w-10 h-10' src={trashAlt} alt="alternative trash icon" />
+                  </button>
                 </div>
               </div>
               : <h2 className='p-2 m-2 w-2/3 sm:w-1/2 rounded-lg bg-red-600 text-white text-sm text-center mx-auto'>Oh! You haven't added any products.</h2>

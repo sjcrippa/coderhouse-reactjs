@@ -1,6 +1,5 @@
 import React from 'react';
 
-import BrandBtns from './BrandBtns';
 
 const BrandTitle = () => {
     return (
@@ -13,7 +12,6 @@ const BrandTitle = () => {
                     our new and iconic releases
                 </h2>
             </div>
-            <BrandBtns />
         </>
     )
 }

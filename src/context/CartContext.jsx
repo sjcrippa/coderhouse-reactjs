@@ -32,7 +32,7 @@ export const CartProvider = ({ children }) => {
     }
 
     /* Logic for removing a single item. */
-    const removeItem = (id) => {
+    const removeItem = (id, item) => {
         const items = cart.filter(item => item.id !== id)
         setCart([...items])
     }
