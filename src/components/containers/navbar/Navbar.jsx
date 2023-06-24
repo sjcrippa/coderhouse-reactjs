@@ -10,24 +10,16 @@ import '../../../App.css';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
-  /* 
-    const handleMenu = () => {
-      setMenu(!menu)
-    }; */
-
-  const handleBdrop = () => {
-    !menu && setMenu(false)
-  };
 
   return (
     <>
       <div className='relative z-10'>
         <div className={menu ? 'left-[-100%]' : 'absolute top-0 left-0 w-full h-[1990vh]  bg-black/50 z-0 md:hidden'}>
         </div>
-        <nav className='fixed flex items-center h-16 p-6 bg-white bg-clip-padding w-full'>
+        <nav className='fixed flex items-center justify-center h-16 p-6 bg-white w-full'>
           <Link to={"/"}>
             <img
-              className='hidden md:block w-36 sm:min-w-36'
+              className='hidden md:inline w-96'
               src={pacoLogo}
               alt="logo"
             />
@@ -35,16 +27,16 @@ const Navbar = () => {
           <NavItems />
           <div
             onClick={() => setMenu(!menu)}
-            className='flex justify-between items-center p-1 text-black md:hidden'>
+            className='flex items-center p-1 text-black md:hidden'>
             {menu ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
           </div>
-          <div className='flex justify-between'>
+          <div className='w-full flex justify-end'>
             <CartWidget />
           </div>
         </nav>
 
-        <nav className={
-          `flex sm:items-center sm:px-4 sm:static sm:gap-3 text-light text-sm bg-white px-5 mt-2 z-10 h-screen fixed top-12 transition-color duration-700 ease-in sm:hidden
+        <nav className=
+        {`flex sm:items-center sm:px-4 sm:static sm:gap-3 text-light text-sm bg-white px-5 mt-2 z-10 h-screen fixed top-12 transition-color duration-700 ease-in sm:hidden
           ${menu ? '-left-[100%]' : 'fixed left-0 shadow-lg shadow-dark'}
           `}>
           <ul className='uppercase flex flex-col'>

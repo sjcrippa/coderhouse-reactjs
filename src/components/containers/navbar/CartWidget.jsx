@@ -11,7 +11,7 @@ const CartWidget = () => {
         (quantityInCart() > 0) ?
         <>
             <Link to={"/cart"}>
-                <button className='flex gap-1 text-center hover:scale-110 duration-200 mt-2'>
+                <button className='flex gap-1 hover:scale-110 duration-200 mt-2'>
                     <img
                         className='w-8 h-8'
                         src={cart}
