@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className={menu ? 'left-[-100%]' : 'absolute top-0 left-0 w-full h-[1990vh]  bg-black/50 z-0 md:hidden'}>
         </div>
         <nav
-          className='fixed flex items-center h-16 p-6 bg-white bg-clip-padding w-full'>
+          className='fixed flex justify-between items-center h-16 p-6 bg-white bg-clip-padding w-full'>
           <Link to={"/"}>
             <img
               className='hidden md:block w-36 sm:min-w-36'
@@ -36,26 +36,23 @@ const Navbar = () => {
           <NavItems />
           <div
             onClick={handleMenu}
-            className='mx-auto p-1 text-black md:hidden'>
+            className='flex items-center -translate-x-32 p-1 text-black md:hidden'>
             {!menu
               ?
-              <div className='flex justify-start'>
-                <button className='z-10 items-center'>
+              <div>
+                <button className='z-10'>
                   <AiOutlineClose size={30} />
                 </button>
               </div>
               :
               <button
                 onClick={handleBdrop}
-                className='z-10 items-center'>
+                className='z-10'>
                 <AiOutlineMenu size={30} />
               </button>
             }
           </div>
-          <div className=''>
-
-            <CartWidget />
-          </div>
+          <CartWidget />
         </nav>
 
         <nav className={!menu ? 'fixed mt-16 left-0 w-[40%] bg-white  h-full ease-in-out duration-700 md:hidden z-10' : 'fixed left-[-100%]'} >

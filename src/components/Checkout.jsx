@@ -1,19 +1,18 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState } from 'react';
 
 import { CartContext } from '../context/CartContext';
 
 import { addDoc, getFirestore, collection } from 'firebase/firestore';
 
-
 import '../App.css';
 
 const Checkout = () => {
-/*   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState(''); */
   const [orderId, setOrderId] = useState('');
-  const [formData, setFormData] = useState({name:null, email:null, phone:null})
+  const [formData, setFormData] = useState({ name: null, email: null, phone: null })
 
+  const { cart, totalAmount } = useContext(CartContext);
+
+  // Logic for recopilation of data:
   const handleForm = (e) => {
     const inputName = e.target.name
     const inputValue = e.target.value
@@ -22,14 +21,13 @@ const Checkout = () => {
       [inputName]: inputValue
     })
   }
-  console.log(formData);
 
-  const { cart, totalAmount } = useContext(CartContext);
-
+  // Logic to send the data into Firestore
   const generateOrder = (e) => {
     e.preventDefault();
-    const {name, email, phone} = formData;
+    const { name, email, phone } = formData;
 
+    // Simple validation:
     if (name.length === 0) {
       return false
     }
@@ -41,7 +39,6 @@ const Checkout = () => {
     }
 
     const buyer = { name: name, email: email, phone: phone };
-    const items = cart.map(item => ({ id: item.id, name: item.name, price: item.price }));
     const save_date = new Date();
     const date = `${save_date.getDate()}-${save_date.getMonth() + 1}-${save_date.getFullYear()} ${save_date.getHours()}:${save_date.getMinutes()}`;
     const total = totalAmount();
@@ -73,27 +70,24 @@ const Checkout = () => {
                   <input
                     name='name'
                     onChange={(e) => handleForm(e)}
-                    //onInput={(e) => { setName(e.target.value) }}
                     className='z-0' type="text" placeholder='Name' />
 
                   <label className='text-start'>Email</label>
                   <input
                     name='email'
                     onChange={(e) => handleForm(e)}
-                    //onInput={(e) => { setEmail(e.target.value) }}
                     type="email" placeholder='Email' />
 
                   <label className='text-start'>Phone number</label>
-                  <input type="text" placeholder='Phone' 
-                  name='phone'
-                  onChange={(e) => handleForm(e)}
-                  //onInput={(e) => { setPhone(e.target.value) }}
+                  <input type="text" placeholder='Phone'
+                    name='phone'
+                    onChange={(e) => handleForm(e)}
                   />
                 </div>
                 <button
                   type="submit"
                   onClick={generateOrder}
-                  className='mt-5 flex justify-start p-2 bg-indigo-700 text-white border rounded'>Generate order</button>
+                  className='mt-5 flex justify-start p-2 bg-indigo-600 text-white border rounded'>Generate order</button>
               </form>
             </div>
             <div className='border rounded'>
@@ -119,10 +113,17 @@ const Checkout = () => {
             </div>
           </div>
         </div>
-        <div className='mx-auto'>
-          <div className='bg-indigo-600'>
-            {orderId ? <h2 className='text-xl text-white font-bold uppercase'>Your order ID is: {orderId} </h2> : ''}
-          </div>
+        <div className='mx-auto text-center'>
+          {orderId
+            ? <>
+              <div className='bg-indigo-600 text-white rounded p-2'>
+                <h2 className='text-2xl font-semibold uppercase'>
+                  Thanks for buying!
+                </h2>
+                <p className='uppercase italic'>Your order id is: <br /> {orderId}</p>
+              </div>
+            </>
+            : ''}
         </div>
       </div>
     </>

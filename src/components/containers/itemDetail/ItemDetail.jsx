@@ -38,7 +38,7 @@ const ItemDetail = ({ item }) => {
               <section className='border-t-2 border-slate-900'></section>
               <button
                 onClick={handleDetails}
-                className='mt-2 text-lg uppercase font-[verdana] text-slate-900'>{!details ? 'Click for details' :
+                className='mt-2 text-lg uppercase font-[verdana] text-slate-900'>{!details ? 'details' :
                   <div className='dropdown'>
                     <p className='mt-2 mb-2 text-center'>For {item.category}</p>
                     <p className='text-start'>$ {item.price}</p>
