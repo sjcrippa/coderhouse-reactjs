@@ -1,14 +1,13 @@
 import React from 'react';
+import { BarLoader } from 'react-spinners';
 
 const Loader = () => {
 
     return (
         <>
             <div className='container mx-auto'>
-                <div className='flex justify-center my-20'>
-                    <p className='p-5 rounded-md bg-indigo-600 text-white text-2xl md:text-4xl font-bold'>
-                        One Moment Please!
-                    </p>
+                <div className='flex justify-center mt-72'>
+                    <BarLoader color="#36d7b7" />
                 </div>
             </div>
         </>

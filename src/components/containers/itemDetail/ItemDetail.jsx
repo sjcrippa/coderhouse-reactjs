@@ -2,15 +2,17 @@ import React, { useContext, useState } from 'react';
 
 import Counter from '../counter/Counter'
 import { CartContext } from '../../../context/CartContext';
+import BackToHome from '../buttons/BackToHome';
+import SeeCart from '../buttons/SeeCart';
 
 const ItemDetail = ({ item }) => {
 
   const [quantity, setQuantity] = useState(1);
   const [details, setDetails] = useState(false);
-  
-  const { cart, handleAddToCart } = useContext(CartContext)
 
-  /* LOGICA PARA CONTADOR FUNCIONAL */
+  const { handleAddToCart } = useContext(CartContext)
+
+  //Logic for functional counter:
   const plusOne = () => {
     quantity < item.stock && setQuantity(quantity + 1)
   };
@@ -18,7 +20,7 @@ const ItemDetail = ({ item }) => {
     quantity > 1 && setQuantity(quantity - 1)
   };
 
-  /* LOGICA PARA BOTON DE DETALLES */
+  // Logic for btn detail:
   const handleDetails = () => {
     if (!details) {
       setDetails(true)
@@ -30,6 +32,7 @@ const ItemDetail = ({ item }) => {
   return (
     <>
       <div className='py-16 mx-auto'>
+        <BackToHome />
         <div className='block sm:flex'>
           <div className='card mx-auto lg:mx-16 mt-10 w-4/6 md:w-3/6 xl:w-1/4 rounded-xl shadow-lg bg-white shadow-black hover:shadow-2xl hover:shadow-black duration-150'>
             <h3 className='py-1 -mb-2 ml-2 uppercase text-lg'>{item.name}</h3>
@@ -38,28 +41,31 @@ const ItemDetail = ({ item }) => {
               <section className='border-t-2 border-slate-900'></section>
               <button
                 onClick={handleDetails}
-                className='mt-2 text-lg uppercase font-[verdana] text-slate-900'>{!details ? 'details' :
-                  <div className='dropdown'>
-                    <p className='mt-2 mb-2 text-center'>For {item.category}</p>
-                    <p className='text-start'>$ {item.price}</p>
+                className='mt-2 text-sm uppercase font-sans text-slate-900'>{!details
+                  ? <><p className='tracking-widest font-bold'>details</p></>
+                  : <div className='transition-all ease-in duration-300 font-bold'>
+                    <p className='mb-2 text-center'>For {item.category}</p>
                     <p className='text-start'>{item.description}</p>
                   </div>}
               </button>
             </div>
           </div>
           <div className='flex flex-col'>
-            <div className='mt-10 m-5 mx-16 md:mx-8 rounded-xl bg-white p-3 shadow-lg shadow-black text-slate-900'>
-              <h2 className='text-center text-xl'>ORDER IT  NOW!</h2>
-              <p className='mt-2'>VISA</p>
-              <p>MASTERCARD</p>
-              <p>HOME DELIVER</p>
+            <div className='font-sans mt-10 m-5 mx-16 md:mx-8 rounded-xl bg-white p-3 shadow-lg shadow-black text-slate-900'>
+              <h2 className='text-center text-xl font-bold'>ORDER IT  NOW!</h2>
+              <div className='mt-1 text-start font-semibold'>
+                <p>$ {item.price}</p>
+                <p>VISA</p>
+                <p>MASTERCARD</p>
+                <p>HOME DELIVER</p>
+              </div>
               <Counter
                 quantity={quantity}
                 plusOne={plusOne}
                 minusOne={minusOne}
-                /* al no poder agregar parametros en react dentro de las props, creamos una funcion flecha dentro: */
-                handleAddToCart={() => {handleAddToCart(item, quantity)}}
+                handleAddToCart={() => { handleAddToCart(item, quantity) }}
               />
+              <SeeCart />
             </div>
           </div>
         </div>

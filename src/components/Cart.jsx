@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { CartContext } from '../context/CartContext';
 
+import BackToHome from './containers/buttons/BackToHome'
 import trash from '../assets/trash.svg';
 import trashAlt from '../assets/trashAlt.svg';
 
@@ -16,21 +17,24 @@ const Cart = () => {
   return (
     <>
       <div className='cart-detail h-screen py-16'>
-        <div className='item-box mx-5 md:mx-10 lg:mx-24 mt-10 bg-white h-[80vh] opacity-90 overflow-y-scroll rounded-md p-1'>
+        <BackToHome />
+        <div className='item-box mx-5 md:mx-10 lg:mx-24 mt-6 bg-white h-[80vh] opacity-90 overflow-y-scroll rounded-md p-1'>
           <h1 className='p-2 text-start text-xl uppercase text-slate-900 '>Order Detail</h1>
           {
             cart.map((item) => (
               <div className='bg-black text-white w-full' key={item.id}>
-                <div className='flex justify-start items-center gap-5 border-b border-white'>
+                <div className=' flex justify-start items-center gap-5 border-b border-white'>
                   <img src={item.image} alt="img" width={100} />
                   <div className='flex-col items-center sm:flex sm:flex-row sm:w-full sm:justify-between'>
+                    <div className='translate-y-5'>
                     <h2>{item.name}</h2>
-                    <p className='tracking-wider'>{item.quantity} x {item.price}</p>
+                    <p className='tracking-wider'>{item.quantity} x ${item.price}</p>
                     <p className='tracking-wider'>Total: ${item.price * item.quantity}</p>
+                    </div>
                     <button 
                       className='translate-x-36 -translate-y-10 sm:relative sm:translate-x-0 sm:translate-y-0'
                       onClick={() => removeItem(item.id)}>
-                      <img className='w-8 h-8' src={trash} alt="trash icon" />
+                      <img className='ml-10 md:ml-0 w-8 h-8' src={trash} alt="trash icon" />
                     </button>
                   </div>
                   <br />
@@ -41,8 +45,8 @@ const Cart = () => {
           {
             cart.length > 0
               ? <div className='mt-2 text-2xl mx-5 md:mx-10 lg:mx-24'>
-                <div className='flex gap-5 justify-end'>
-                  <h2 className=''>Total ${totalAmount()} </h2>
+                <div className='flex gap-5 justify-end items-center md:-mr-10'>
+                  <h2 className='uppercase italic'>Total ${totalAmount()} </h2>
                   <button onClick={handleClear}>
                     <img className='w-10 h-10' src={trashAlt} alt="alternative trash icon" />
                   </button>
@@ -53,7 +57,7 @@ const Cart = () => {
         </div>
         <div className='flex justify-end mt-10 mr-10'>
           <Link to={'/checkout'}>
-            <button className='uppercase text-2xl bg-indigo-600 rounded text-white p-3'>Go to checkout</button>
+            <button className='p-2 bg-black px-10 text-white uppercase tracking-widest border shadow-sm rounded-3xl shadow-black/60 hover:scale-110 hover:bg-slate-900 transition-colors duration-200'>Go to checkout</button>
           </Link>
         </div>
       </div>

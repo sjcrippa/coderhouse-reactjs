@@ -36,24 +36,29 @@ const Navbar = () => {
         </nav>
 
         <nav className=
-        {`flex sm:items-center sm:px-4 sm:static sm:gap-3 text-light text-sm bg-white px-5 mt-2 z-10 h-screen fixed top-12 transition-color duration-700 ease-in sm:hidden
+          {`flex sm:items-center sm:px-4 sm:static sm:gap-3 text-light text-sm bg-white px-5 mt-2 z-10 h-screen fixed top-12 transition-color duration-700 ease-in sm:hidden
           ${menu ? '-left-[100%]' : 'fixed left-0 shadow-lg shadow-dark'}
           `}>
           <ul className='uppercase flex flex-col'>
             <Link
+              to={"/home"}
+              className="nav-btn p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-slate-800 w-36">
+              home
+            </Link>
+            <Link
               to={"/productos/him"}
               className="nav-btn p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-slate-800 w-36">
-              FOR HIM
+              for him
             </Link>
             <Link
               to={"/productos/her"}
               className="nav-btn p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-slate-800 w-36">
-              FOR HER
+              for her
             </Link>
             <Link
               to={"/productos"}
               className="nav-btn p-4 pl-4 hover:text-white hover:bg-slate-900 duration-300 md:p-0 text-md md:text-base font-extralight border-b-2 border-slate-800 w-36">
-              ALL
+              all
             </Link>
             <Link
               to={'/'}

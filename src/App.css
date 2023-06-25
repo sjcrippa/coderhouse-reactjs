@@ -8,7 +8,7 @@
     background-image: url('./assets/bgdetail.jpeg');
     background-size: cover;
     width: 100%;
-    height: 110vh;
+    height: 120vh;
 }
 
 .cart-detail{
@@ -25,3 +25,4 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
+

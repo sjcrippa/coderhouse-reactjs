@@ -22,6 +22,7 @@ const App = () => {
             <Navbar />
             <Routes>
               <Route path={'/'} element={<Header />} />
+              <Route path={'/home'} element={<Header />} />
               <Route path={'/productos'} element={<ItemListContainer />} />
               <Route path={'/productos/:category'} element={<ItemListContainer />} />
               <Route path={'/item/:id'} element={<ItemDetailContainer />} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import BrandBtns from './BrandBtns';
 
 
 const BrandTitle = () => {
@@ -11,6 +12,7 @@ const BrandTitle = () => {
                 <h2 className='mt-64 md:mt-48 lg:mt-56 text-4xl md:text-5xl lg:text-6xl uppercase'>
                     our new and iconic releases
                 </h2>
+                <BrandBtns />
             </div>
         </>
     )
