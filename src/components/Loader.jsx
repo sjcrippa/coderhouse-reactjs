@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarLoader } from 'react-spinners';
+import { GridLoader } from 'react-spinners';
 
 const Loader = () => {
 
@@ -7,7 +7,10 @@ const Loader = () => {
         <>
             <div className='container mx-auto'>
                 <div className='flex justify-center mt-72'>
-                    <BarLoader color="#36d7b7" />
+                    <GridLoader
+                        color="#3C3CE5"
+                        size={25}
+                    />
                 </div>
             </div>
         </>
