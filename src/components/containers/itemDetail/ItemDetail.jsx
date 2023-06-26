@@ -34,7 +34,7 @@ const ItemDetail = ({ item }) => {
       <div className='py-16 mx-auto'>
         <BackToHome />
         <div className='block sm:flex justify-center'>
-          <div className='card mx-auto lg:mx-16 mt-10 w-4/6 md:w-3/6 rounded-xl shadow-lg bg-white shadow-black hover:shadow-2xl hover:shadow-black duration-150'>
+          <div className='card mx-auto lg:mx-16 mt-10 w-4/6 md:w-3/6 lg:w-fit rounded-xl shadow-lg bg-white shadow-black hover:shadow-2xl hover:shadow-black duration-150'>
             <h3 className='py-1 -mb-2 ml-2 uppercase text-lg'>{item.name}</h3>
             <img className='p-1 rounded-t-xl' src={item.image} alt="prod-img" />
             <div className='p-2 mb-2 text-sm lg:text-base text-center font-serif font-semibold'>
@@ -54,10 +54,17 @@ const ItemDetail = ({ item }) => {
             <div className='font-sans mt-10 m-5 mx-16 md:mx-8 rounded-xl bg-white p-3 shadow-lg shadow-black text-slate-900 h-[22rem] md:h-1/2'>
               <h2 className='text-center text-xl font-bold'>ORDER IT  NOW!</h2>
               <div className='mt-1 text-start font-semibold mb-3 md:mb-10'>
-                <p className='mt-2'>$ {item.price}</p>
-                <p>VISA</p>
-                <p>MASTERCARD</p>
-                <p>HOME DELIVER</p>
+                <div className='grid grid-cols-2'>
+                  <div>
+                    <p className='mt-2 font-bold'>$ {item.price}</p>
+                    <p>VISA</p>
+                    <p>MASTERCARD</p>
+                    <p>HOME DELIVER</p>
+                  </div>
+                  <div className='flex justify-end -translate-x-10 translate-y-2'>
+                    <img className='w-1/2' src={item.image} alt="" />
+                  </div>
+                </div>
               </div>
               <Counter
                 quantity={quantity}
@@ -66,7 +73,7 @@ const ItemDetail = ({ item }) => {
                 handleAddToCart={() => { handleAddToCart(item, quantity) }}
               />
               <div className='flex justify-center mt-7 md:mt-32'>
-              <SeeCart />
+                <SeeCart />
               </div>
             </div>
           </div>

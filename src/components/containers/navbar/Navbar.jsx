@@ -31,7 +31,7 @@ const Navbar = () => {
             className='flex items-center p-1 text-black md:hidden'>
             {menu ? <AiOutlineMenu size={30} /> : <AiOutlineClose size={30} />}
           </div>
-          <div className='w-full flex justify-end'>
+          <div className='flex justify-end w-full'>
             <CartWidget />
           </div>
         </nav>

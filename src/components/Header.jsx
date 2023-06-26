@@ -1,8 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-import Navbar from './containers/navbar/Navbar'
-import Main from './Main'
-import ItemListContainer from './containers/itemListContainer/ItemListContainer'
+import Main from './Main';
+import ItemListContainer from './containers/itemListContainer/ItemListContainer';
 
 const Header = () => {
     return (
@@ -15,4 +14,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;
