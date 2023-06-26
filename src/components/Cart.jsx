@@ -57,7 +57,7 @@ const Cart = () => {
         </div>
         <div className='flex justify-end mt-10 mr-10'>
           <Link to={'/checkout'}>
-            <button className='p-2 bg-black px-10 text-white uppercase tracking-widest border shadow-sm rounded-3xl shadow-black/60 hover:scale-110 hover:bg-slate-900 transition-colors duration-200'>Go to checkout</button>
+            <button className='p-2 bg-black px-10 text-white uppercase tracking-widest border shadow-sm rounded-3xl shadow-black/60 hover:scale-110 hover:bg-slate-900 transition-all duration-200'>Go to checkout</button>
           </Link>
         </div>
       </div>
