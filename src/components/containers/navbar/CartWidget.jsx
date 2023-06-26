@@ -8,7 +8,7 @@ const CartWidget = () => {
     const { quantityInCart } = useContext(CartContext);
 
     return (
-        (quantityInCart() > 0) ?
+
         <>
             <Link to={"/cart"}>
                 <button className='flex gap-1 hover:scale-110 duration-200 mt-2'>
@@ -16,11 +16,12 @@ const CartWidget = () => {
                         className='w-8 h-8'
                         src={cart}
                         alt="cart" />
-                    <span className='text-lg -translate-y-3 text-white bg-black rounded-full h-7 w-7'>{quantityInCart()}</span>
+                    {(quantityInCart() > 0) ?
+                        <span className='text-lg -translate-y-3 text-white bg-black rounded-full h-7 w-7'>{quantityInCart()}</span> : ''}
                 </button>
             </Link>
         </>
-        : ''
+
     )
 }
 
