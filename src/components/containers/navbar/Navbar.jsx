@@ -14,7 +14,8 @@ const Navbar = () => {
   return (
     <>
       <div className='relative z-10'>
-        <div className={menu ? 'left-[-100%]' : 'absolute top-0 left-0 w-full h-[1990vh]  bg-black/50 z-0 md:hidden'}>
+        <div
+          className={menu ? 'left-[-100%]' : 'absolute top-0 left-0 w-full h-[1990vh]  bg-black/50 z-0 md:hidden'}>
         </div>
         <nav className='fixed flex items-center justify-center h-16 p-6 bg-white w-full'>
           <Link to={"/"}>
