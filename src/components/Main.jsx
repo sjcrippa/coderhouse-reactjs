@@ -1,7 +1,8 @@
 import React from 'react';
 
 import BrandTitle from './containers/brand/BrandTitle';
-import '../App.css'
+import '../App.css';
+
 const Main = () => {
 
     return (
@@ -13,4 +14,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Main;

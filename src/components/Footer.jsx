@@ -12,7 +12,7 @@ const Footer = () => {
                     <Link to={'/'}>
                         <img className='w-32 p-2 rounded-lg' src={logoDos} alt="logo" />
                     </Link>
-                    <ul className='flex translate-x-10 items-center gap-5'>
+                    <ul className='hidden md:flex translate-x-10 items-center gap-5'>
                         <li><img src={github} alt="github" /><Link to="/"></Link></li>
                         <li><img src={twitter} alt="twitter" /><Link to="/"></Link></li>
                         <li><img src={linkedin} alt="linkedin" /><Link to="/"></Link></li>
@@ -21,7 +21,7 @@ const Footer = () => {
                         <p className='text-lg font-semibold cursor-default font-serif'>
                             Developed by
                         </p>
-                        <a href="https://github.com/sjcrippa" target='_blank'>
+                        <a href="https://github.com/sjcrippa" target='_blank' rel="noreferrer">
                             <img
                                 className='inline h-24 ml-5 hover:scale-110 duration-200'
                                 src={logosjc}
@@ -34,4 +34,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;
